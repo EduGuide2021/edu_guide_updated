@@ -1,0 +1,19 @@
+:root {
+	
+	--eduguide_blue: #16367c !important;
+	--eduguide_orange: #f19336 !important;
+	font-family: Ruda;
+	
+}
+
+
+
+* {
+	/* margin: 1vw; */
+	box-sizing: border-box;
+	
+	
+}
+@media screen and (max-width: 380px) {
+	
+}

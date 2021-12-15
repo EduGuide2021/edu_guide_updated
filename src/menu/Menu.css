@@ -1,0 +1,494 @@
+h1 {
+	font-family: Ruda;
+	font-size: 4vw;
+	color: var(--eduguide_blue) !important;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: -0.1%;
+	font-weight: 600 !important;
+}
+/* th, td {
+	padding: 15px;
+  } */
+  table {
+	border-spacing: 30px;
+  }
+
+p {
+	font-family: Ruda;
+	font-size: 1.5vw;
+	color: var(--eduguide_blue) !important;
+	text-align: center;
+	margin-top: 2.5%;
+	font-weight: 400 !important;
+}
+
+.about__link {
+	cursor: pointer;
+	font-size: 2vw;
+	transition: 0.2s;
+	text-decoration: none;
+	margin-top: -9vw;
+	color: white;
+}
+
+.about__link:hover {
+	color: #f19336;
+}
+
+.devs img {
+	margin-left: 5%;
+	width: 17%;
+	height: 17%;
+	margin-top: 2.5%;
+}
+/* .devs strong {
+	position: relative;
+
+	
+
+	
+} */
+.card-br{
+	display: none;
+}
+
+.names-ul {
+	list-style-type: none;
+	margin-bottom: 7vw;
+	font-family: Ruda;
+	font-size: 1.3vw;
+	color: var(--eduguide_blue);
+	text-align: center;
+	margin-left: -9%;
+}
+.names-ul li {
+	display: inline-flex;
+	margin-left: 6.2%;
+}
+
+h6 {
+	font-family: Ruda;
+	font-size: 1.6vw;
+	/* margin: -4vw; */
+	color: var(--eduguide_blue);
+	text-align: center;
+}
+
+.sub-btn {
+	font-family: Ruda;
+	font-size: 1.65vw;
+	background-color: var(--eduguide_orange);
+	color: var(--eduguide_blue);
+	padding: 0.5vw 2vw;
+	border: none;
+	border-radius: 3vw;
+	font-weight: 600;
+}
+.field {
+	font-family: Ruda;
+	font-size: 1.55vw;
+	color: var(--eduguide_blue);
+	/* margin-left: 5%; */
+	margin-bottom: 1vw;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-width: unset;
+	width: 25%;
+	border-color: var(--eduguide_blue);
+	display: inline-block;
+}
+
+.blog-field {
+	font-family: Ruda;
+	font-size: 1.65vw;
+	color: var(--eduguide_blue);
+	margin-top: 2.5%;
+	width: 70%;
+	height: 3em;
+	border: thick;
+	border-color: var(--eduguide_blue);
+	border-style: solid;
+	text-align: initial;
+}
+
+.line {
+	width: 75%;
+	margin-bottom: 1vw;
+}
+
+.contact-field {
+	font-size: 1.65vw;
+	color: var(--eduguide_blue);
+	width: 60%;
+	height: 5em;
+	border: thick;
+	border-color: var(--eduguide_blue);
+	border-style: solid;
+	text-align: initial;
+}
+
+.social-icons {
+	display: inline-block;
+	margin-left: 1%;
+	width: 4.5%;
+}
+
+.test-btn {
+	font-size: 1.55vw;
+	background-color: var(--eduguide_blue);
+	color: var(--eduguide_orange);
+	padding: 0.9vw 2vw;
+	border: none;
+}
+.intro-edu {
+	width: 60%;
+}
+
+.intro-col {
+	width: 58%;
+}
+
+.img-about {
+	width: 100%;
+	height: 100%;
+}
+
+.faqsbox {
+	height: auto;
+	padding: 10px;
+	background: #ffc78f;
+}
+.faqsbox b{
+	font-size: 25px;
+}
+
+.faqstable {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.faqstd {
+	
+	width: 50%;
+	padding: 6px;
+}
+
+.commfield {
+	font-size: 1.2vw;
+	color: var(--eduguide_blue);
+	width: 60%;
+	height: 60%;
+	border: thin;
+	border-color: var(--eduguide_blue);
+	border-style: solid;
+	text-align: initial;
+	margin-left: -40px;
+}
+
+.commdiv {
+	display: flex;
+	justify-content: center;
+}
+
+.commicon {
+	width: 140px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.postbtn {
+	cursor: pointer;
+	font-size: 1.5vw;
+	transition: 0.2s;
+	text-decoration: none;
+	color: var(--eduguide_blue);
+	background-color: white;
+	border: none;
+	margin-left: 620px;
+}
+
+.postbtn:hover {
+	color: var(--eduguide_orange);
+}
+
+.commentbtn {
+	cursor: pointer;
+	font-size: 1.5vw;
+	transition: 0.2s;
+	text-decoration: none;
+	color: var(--eduguide_blue);
+	background-color: white;
+	border: none;
+	margin-left: 120px;
+}
+
+.commentbtn:hover {
+	color: var(--eduguide_orange);
+}
+
+.sharebtn {
+	cursor: pointer;
+	font-size: 1.5vw;
+	transition: 0.2s;
+	text-decoration: none;
+	color: var(--eduguide_blue);
+	background-color: white;
+	border: none;
+	margin-left: 15px;
+}
+
+.sharebtn:hover {
+	color: var(--eduguide_orange);
+}
+
+.deletebtn {
+	cursor: pointer;
+	font-size: 1.5vw;
+	transition: 0.2s;
+	text-decoration: none;
+	color: var(--eduguide_blue);
+	background-color: white;
+	border: none;
+	margin-left: 210px;
+}
+
+.deletebtn:hover {
+	color: var(--eduguide_orange);
+}
+
+.comm_entry {
+	font-size: 1.2vw;
+	color: var(--eduguide_blue);
+	width: 60%;
+	height: 60%;
+	border: thin;
+	border-color: var(--eduguide_blue);
+	text-align: initial;
+	background: #ffc78f;
+	margin-left: -40px;
+}
+
+.about__table {
+	border-collapse: separate;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+}
+
+.about__box {
+	background-color: var(--eduguide_blue);
+}
+.container {
+    width:100%;
+    max-width:2000px;
+    /* border:2px solid black; */
+    margin: 0 auto;
+    padding:10px;
+	height:100%;
+	max-height: 2000px;
+}
+.row {
+    height:300px; /*set height*/
+    /* border:2px solid blue; */
+    width:100%;
+    margin-bottom:10px;
+    padding:10px;
+}
+
+.col2 {
+	text-align: center;
+	
+    /* border:2px solid green; */
+    width:25%;
+    float:left;
+    height:100%;
+     
+}
+.col2 img{
+    /* border:2px solid green; */
+    /* margin-left: 5%; */
+		width: 70%;
+		height: 100%;
+		margin-top: 2.5%;
+}
+.faqs-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+	.blog-field {
+		
+		width: 90%;
+		height: 50px;
+		font-size: 15px;
+		
+	}
+	a {
+		font-size: 15px;
+	}
+	.faqsbox {
+		margin-left: auto;
+    margin-right: auto;
+		width : 90%;
+	}
+	.faqstable {
+		display: none;
+	}
+	.faqs-mobile {
+		display: block;
+	}
+	.card-br{
+		display: block;
+	}
+	.social-icons {
+		display: inline-block;
+		margin-left: 1%;
+		width: 20%;
+	}
+	.feed-back-label{
+		font-size: 20px;
+	}
+	.sub-btn {
+		height: 50px;
+		width: 150px;
+		font-family: Ruda;
+		font-size: 30px;
+		background-color: var(--eduguide_orange);
+		color: var(--eduguide_blue);
+		padding: 0.5vw 2vw;
+		border: none;
+		border-radius: 3vw;
+		font-weight: 600;
+	}
+	.contact-field {
+		font-size: 16px;
+		color: var(--eduguide_blue);
+		width: 90%;
+		height: 70px;
+		border: thick;
+		border-color: var(--eduguide_blue);
+		border-style: solid;
+		text-align: initial;
+	}
+	h6 {
+		font-family: Ruda;
+		font-size: 30px;
+		/* margin: -4vw; */
+		color: var(--eduguide_blue);
+		text-align: center;
+	}
+	.col2 {
+		text-align: center;
+		/* border:2px solid green; */
+		width:50%;
+		float:left;
+		height:50%;
+		 
+	}
+	.devs strong{
+		font-size: 10px;
+	}
+	
+	.devs img {
+		/* margin-left: 5%; */
+		width: 80%;
+		height: 80%;
+		margin-top: 2.5%;
+	}
+	.about__link {
+		cursor: pointer;
+		font-size: 20px;
+		transition: 0.2s;
+		text-decoration: none;
+		margin-top: -9vw;
+		color: white;
+	}
+	.card-size{
+		height: 100%;
+	}
+	h1 {
+		font-family: Ruda;
+		font-size: 50px;
+		color: var(--eduguide_blue) !important;
+		text-align: center;
+		margin-top: 2%;
+		margin-bottom: -0.1%;
+		font-weight: 600 !important;
+	}
+	p {
+		font-family: Ruda;
+		font-size: 15px;
+		color: var(--eduguide_blue) !important;
+		text-align: center;
+		margin-top: 2.5%;
+		font-weight: 400 !important;
+	}
+	.test-btn {
+		
+		font-size: 25px;
+		background-color: var(--eduguide_blue);
+		color: var(--eduguide_orange);
+		padding: 0.9vw 2vw;
+		border: none;
+	}
+	.field{
+		width: 80%;
+		height: 50px;
+		font-size: 40px;
+	}
+	.field-input{
+		width: 80%;
+		height: 50px;
+		font-size: 40px;
+		margin-left: 10%;
+	}
+	.form-alignment{
+		width: 100%;
+		float: "center";
+	}
+	.commicon img{
+		/* position: absolute; */
+		height: 120px;
+		width: 150px;
+		/* margin-bottom: 100%; */
+		/* margin-left: 20%; */
+		/* margin-right: auto; */
+	}
+	.commicon {
+		position: absolute;
+		width: 140px;
+		float: center;
+		/* margin-top: 10px;
+		margin-left: 10px; */
+	}
+	.postbtn {
+		cursor: pointer;
+		font-size: 20px;
+		transition: 0.2s;
+		text-decoration: none;
+		color: var(--eduguide_blue);
+		background-color: white;
+		border: none;
+		margin-left: 70%;
+	}
+	.commfield {
+		font-size: 20px;
+		color: var(--eduguide_blue);
+		width: 90%;
+		height: 70px;
+		margin-top: 30%;
+		margin-left: 5%;
+		margin-right: 5%;
+		border: thin;
+		border-color: var(--eduguide_blue);
+		border-style: solid;
+		text-align: initial;
+		
+	}
+	
+}

@@ -1,0 +1,67 @@
+.sidebar {
+  background-color: var(--eduguide_blue);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  margin-left: 162px;
+  width: 55%;
+  /* margin-left: none; */
+  /* width: 100%; */
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(100vw);
+}
+
+.sidebar__link {
+  list-style: none;
+  font-size: 1.5vw;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.sidebar__link:hover {
+  color: var(--eduguide_orange);
+  transform: scale(1.1);
+}
+
+.sidebar__cancel {
+  position: absolute;
+  /* border:2px solid green; */
+  /* position: static; */
+  height: 50px;
+  margin-right: -150px;
+  margin-top: -10px;
+  padding-top: 15px;
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+#show-sidebar {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+
+#hide-sidebar {
+  transform: translateX(100vw);
+  transition: 0.2s;
+}
+@media (max-width: 500px) {
+  .sidebar__cancel {
+    padding-top: 15px;
+    margin-left: -20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .sidebar__link {
+    list-style: none;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+  }
+}

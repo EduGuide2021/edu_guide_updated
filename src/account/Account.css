@@ -1,0 +1,407 @@
+
+.sign-form {
+  font-size: 1.55vw;
+  color: var(--eduguide_blue);
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-alignment{
+  width: 50%;
+}
+.edit-form {
+  font-size: 1.55vw;
+  color: var(--eduguide_blue);
+  margin-left: -10%;
+}
+
+.pass-form {
+  margin-top: 5%;
+  color: var(--eduguide_blue);
+  margin-left: -11%;
+}
+
+label {
+  font-family: Ruda;
+  font-size: 2vw;
+  /* margin-left: -50%; */
+  font-weight: 600;
+}
+form {
+  margin-bottom: 1.5vw;
+  width: 100%;
+}
+
+.field-input {
+  
+  font-family: Ruda;
+	font-size: 1.55vw;
+	color: var(--eduguide_blue);
+	margin-left: 10%;
+	margin-bottom: 1vw;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-width: unset;
+	width: 50%;
+	border-color: var(--eduguide_blue);
+	display: inline-block;
+}
+/* .sign-form input{
+  
+  display: none;
+} */
+
+.edit-field {
+  font-family: Ruda;
+  color: var(--eduguide_blue);
+  list-style: none;
+  font-size: 1.55vw;
+  margin-left: 0%;
+  margin-bottom: -1vw;
+  margin-top: -20%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: unset;
+  width: 100%;
+}
+
+.pass-field {
+  color: var(--eduguide_blue);
+  margin-left: 17%;
+  margin-bottom: -1vw;
+  margin-top: -2%;
+  border-width: unset;
+  width: 15%;
+  display: list-item;
+}
+
+.reg-btn {
+  font-size: 1.65vw;
+  background-color: var(--eduguide_blue);
+  color: white;
+  padding: 0.5vw 2vw;
+  border: none;
+  border-radius: 3vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h3 {
+  margin-top: 3%;
+  font-size: 1.3vw;
+  color: var(--eduguide_blue);
+  text-align: center;
+  margin-bottom: 0.5%;
+}
+
+.profile-btn {
+  margin-top: 3%;
+  margin-left: 23%;
+  margin-bottom: 5%;
+}
+
+.pass-btns {
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.result-btn {
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.bottom_p {
+  font-size: 0.9vw;
+  margin-top: 3%;
+}
+
+.change-btn {
+  margin-left: 0%;
+}
+
+.bg-icon {
+  width: 20%;
+}
+
+.change-icon {
+  margin-top: -63%;
+  margin-left: -15%;
+  width: 130%;
+}
+
+.option-icon img {
+  width: 110%;
+  display: flex;
+  margin-left: -140%;
+}
+
+.menu-ul2 {
+  list-style-type: none;
+  margin-left: 91%;
+  font-family: Ruda;
+  font-size: 1.3vw;
+  color: var(--eduguide_blue);
+}
+
+.edit-iconbg {
+  width: 100%;
+  margin-top: -05%;
+}
+
+.edit-icon {
+  width: 140%;
+  margin-top: -65.5%;
+  margin-left: -11.7%;
+}
+
+.profile-table,
+.edit-table {
+  margin-left: 25%;
+}
+
+.icons {
+  margin-left: 31%;
+}
+
+.results {
+  font-family: Ruda;
+  color: var(--eduguide_blue);
+  font-size: 1.55vw;
+  width: 80%;
+  margin-top: 5%;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.blue {
+  color: var(--eduguide_blue);
+  font-size: 1.2vw;
+}
+
+.orange {
+  color: var(--eduguide_orange);
+  font-size: 1.2vw;
+}
+
+.form-error {
+  color: #ee5858;
+  font-size: 1.2vw;
+  display: flex;
+  margin-left: 8%;
+}
+.br-line{
+  display: none;
+}
+
+
+/* for mobile */
+
+@media screen and (max-width: 500px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+.login_body h1 {
+  font-size: 50px;
+}
+.sign-form {
+  /* font-size: 1.55vw;
+  color: var(--eduguide_blue);
+  margin-left: 40%; */
+}
+.line {
+  display: none;
+}
+
+.edit-form {
+  /* font-size: 1.55vw;
+  color: var(--eduguide_blue);
+  margin-left: -10%; */
+}
+
+.pass-form {
+  /* margin-top: 5%;
+  color: var(--eduguide_blue);
+  margin-left: -11%; */
+}
+
+label {
+  font-size: 30px;
+  /* line-height: 110px; */
+  /* font-family: Ruda;
+  font-size: 2vw;
+  
+  margin-left: -50%;
+  font-weight: 600; */
+  /* height: 1000px; */
+}
+form {
+  /* margin-bottom: 1.5vw;
+  width: 100%; */
+}
+.br-line{
+  display: block;
+}
+b{
+  
+  /* line-height: 110px; */
+  font-size: 30px;
+  /* margin-left: 10%; */
+}
+.field{
+  /* position: absolute; */
+  /* left:10px; */
+  /* height: 30px; */
+  /* width: 100px; */
+  /* font-size: large; */
+  /* line-height: 110px; */
+  /* font-family: Ruda;
+  font-size: 1.5vw; */
+  /* width: 20px; */
+  /* margin-bottom: 0%; */
+  /* margin-top: -1.25%; */
+   /* border-top: none; */
+  /* border-right: none; */
+  /* border-left: none; */
+  /* border-width: unset; */
+  /* float: right;  */
+}
+
+.edit-field {
+  /* font-family: Ruda;
+  color: var(--eduguide_blue);
+  list-style: none;
+  font-size: 1.55vw;
+  margin-left: 0%;
+  margin-bottom: -1vw;
+  margin-top: -20%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: unset;
+  width: 100%; */
+}
+
+.pass-field {
+  /* color: var(--eduguide_blue);
+  margin-left: 17%;
+  margin-bottom: -1vw;
+  margin-top: -2%;
+  border-width: unset;
+  width: 15%;
+  display: list-item; */
+}
+
+.reg-btn {
+  font-size: 40px;
+  background-color: var(--eduguide_blue);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 3vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h3 {
+  /* margin-top: 3%;
+  font-size: 1.3vw;
+  color: var(--eduguide_blue);
+  text-align: center;
+  margin-bottom: 0.5%; */
+}
+
+.profile-btn {
+  /* margin-top: 3%;
+  margin-left: 23%;
+  margin-bottom: 5%; */
+}
+
+.pass-btns {
+  /* margin-top: 4%;
+  margin-bottom: 5%; */
+}
+
+.result-btn {
+  /* margin-top: 4%;
+  margin-bottom: 5%; */
+}
+
+.bottom_p {
+  /* font-size: 0.9vw;
+  margin-top: 3%; */
+}
+
+.change-btn {
+  /* margin-left: 0%; */
+}
+
+.bg-icon {
+  /* width: 20%; */
+}
+
+.change-icon {
+  /* margin-top: -63%;
+  margin-left: -15%;
+  width: 130%; */
+}
+
+.option-icon img {
+  /* width: 110%;
+  display: flex;
+  margin-left: -140%; */
+}
+
+.menu-ul2 {
+  /* list-style-type: none;
+  margin-left: 91%;
+  font-family: Ruda;
+  font-size: 1.3vw;
+  color: var(--eduguide_blue); */
+}
+
+.edit-iconbg {
+  /* width: 100%;
+  margin-top: -05%; */
+}
+
+.edit-icon {
+  /* width: 140%;
+  margin-top: -65.5%;
+  margin-left: -11.7%; */
+}
+
+.profile-table,
+.edit-table {
+  /* margin-left: 25%; */
+}
+
+.icons {
+  /* margin-left: 31%; */
+}
+
+.results {
+  /* font-family: Ruda;
+  color: var(--eduguide_blue);
+  font-size: 1.55vw;
+  width: 80%;
+  margin-top: 5%;
+  font-weight: bold;
+  margin-bottom: 5%; */
+}
+
+.blue {
+  /* color: var(--eduguide_blue);
+  font-size: 1.2vw; */
+}
+
+.orange {
+  /* color: var(--eduguide_orange);
+  font-size: 1.2vw; */
+}
+
+.form-error {
+  /* color: #ee5858;
+  font-size: 1.2vw;
+  display: flex;
+  margin-left: 8%; */
+}
+}
