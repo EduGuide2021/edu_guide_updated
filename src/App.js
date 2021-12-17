@@ -13,7 +13,6 @@ import Community from "./menu/Community";
 import Contact from "./menu/Contact";
 import Login from "./account/Login";
 import AdminLogin from "./admin/AdminLogin";
-import AdminPage from "./admin/AdminPage";
 import Signup from "./account/SignUp";
 import Welcome from "./account/Welcome";
 import MainProfile from "./account/MainProfile";
@@ -43,6 +42,10 @@ import SpecResults2 from "./spectest/SpecResults2";
 import SpecTest3 from "./spectest/SpecTest3";
 import SpecResults3 from "./spectest/SpecResults3";
 import Footer from "./components/Footer";
+import AdminDashBoard from "./admin/AdminDashboard";
+import AdminUserAccounts from "./admin/AdminUserAccounts";
+import CustomizeGenTest from "./admin/CustomizeGenTest";
+import AddGenTestSet from "./admin/AddGenTestSet";
 
 // import ForgotPassword from "./components/ForgotPassword";
 
@@ -51,73 +54,84 @@ import { setAccountDetails } from "./store/actions/header";
 import { GET_CURRENT_USER } from "./account/Graphql/Mutation";
 
 function App() {
-	const dispatch = useDispatch();
-	const [getCurrentUser, { data, error }] = useMutation(GET_CURRENT_USER);
-	const header = useSelector((state) => state.header);
+  const dispatch = useDispatch();
+  const [getCurrentUser, { data, error }] = useMutation(GET_CURRENT_USER);
+  const header = useSelector((state) => state.header);
 
-	useEffect(() => {
-		if (localStorage.getItem("user")) {
-			getCurrentUser({
-				variables: { id: JSON.parse(localStorage.getItem("user")).id },
-			}).then((data) => {
-				localStorage.setItem(
-					"user",
-					JSON.stringify(data.data?.getCurrentUser?.user)
-				);
-			});
-			dispatch(
-				setAccountDetails(JSON.parse(localStorage.getItem("user")).username)
-			);
-		}
-	}, []);
+  useEffect(() => {
+    if (localStorage.getItem("user")) {
+      getCurrentUser({
+        variables: { id: JSON.parse(localStorage.getItem("user")).id },
+      }).then((data) => {
+        localStorage.setItem(
+          "user",
+          JSON.stringify(data.data?.getCurrentUser?.user)
+        );
+      });
+      dispatch(
+        setAccountDetails(JSON.parse(localStorage.getItem("user")).username)
+      );
+    }
+  }, []);
 
-	return (
-		<Router>
-			<div className="app">
-				<Navbar />
-				<Sidebar />
-				<Route exact path="/" component={Home} />
-				<Route exact path="/about" component={About} />
-				<Route exact path="/faqs" component={FAQs} />
-				<Route exact path="/contact" component={Contact} />
-				{localStorage.getItem("user") || header ? (
-					<>
-						<Route exact path="/blogs" component={Blogs} />
-						<Route exact path="/community" component={Community} />
-						<Route exact path="/adminpage" component={AdminPage} />
-						<Route exact path="/mainprofile" component={MainProfile} />
-						<Route exact path="/editprofile" component={EditProfile} />
-						<Route exact path="/changeicon" component={ChangeIcon} />
-						<Route exact path="/changepass" component={ChangePass} />
-						<Route exact path="/testresults" component={TestResults} />
-						<Route exact path="/gendesc" component={GenDesc} />
-						<Route exact path="/gentest" component={GenTest} />
-						<Route exact path="/genresults" component={GenResults} />
-						<Route exact path="/gencourses" component={GenCourses} />
-						<Route exact path="/specdesc" component={SpecDesc} />
-						<Route exact path="/special-test" component={BSCompSci} />
-						<Route exact path="/bsenterprice" component={BSEntrep} />
-						<Route exact path="/spectest2" component={SpecTest2} />
-						<Route exact path="/spectest3" component={SpecTest3} />
-						<Route exact path="/specresults1" component={SpecResults1} />
-						<Route exact path="/specresults2" component={SpecResults2} />
-						<Route exact path="/specresults3" component={SpecResults3} />
-						<Route exact path="/welcome" component={Welcome} />
-						{/* <Route exact path="/forgotpass" component={ForgotPassword} /> */}
-					</>
-				) : (
-					<>
-						<Route exact path="/signup" component={Signup} />
-						<Route exact path="/login" component={Login} />
-						<Route exact path="/adminlogin" component={AdminLogin} />
-					</>
-				)}
+  return (
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Sidebar />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/faqs" component={FAQs} />
+        <Route exact path="/contact" component={Contact} />
+        {localStorage.getItem("user") || header ? (
+          <>
+            <Route exact path="/blogs" component={Blogs} />
+            <Route exact path="/community" component={Community} />
+            <Route exact path="/mainprofile" component={MainProfile} />
+            <Route exact path="/editprofile" component={EditProfile} />
+            <Route exact path="/changeicon" component={ChangeIcon} />
+            <Route exact path="/changepass" component={ChangePass} />
+            <Route exact path="/testresults" component={TestResults} />
+            <Route exact path="/gendesc" component={GenDesc} />
+            <Route exact path="/gentest" component={GenTest} />
+            <Route exact path="/genresults" component={GenResults} />
+            <Route exact path="/gencourses" component={GenCourses} />
+            <Route exact path="/specdesc" component={SpecDesc} />
+            <Route exact path="/special-test" component={BSCompSci} />
+            <Route exact path="/bsenterprice" component={BSEntrep} />
+            <Route exact path="/spectest2" component={SpecTest2} />
+            <Route exact path="/spectest3" component={SpecTest3} />
+            <Route exact path="/specresults1" component={SpecResults1} />
+            <Route exact path="/specresults2" component={SpecResults2} />
+            <Route exact path="/specresults3" component={SpecResults3} />
+            <Route exact path="/welcome" component={Welcome} />
+            <Route exact path="/admin-dashboard" component={AdminDashBoard} />
+            <Route
+              exact
+              path="/admin-user-accounts"
+              component={AdminUserAccounts}
+            />
+            <Route
+              exact
+              path="/customize-gen-test"
+              component={CustomizeGenTest}
+            />
+            <Route exact path="/add-gen-test-set" component={AddGenTestSet} />
+            {/* <Route exact path="/forgotpass" component={ForgotPassword} /> */}
+          </>
+        ) : (
+          <>
+            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/adminlogin" component={AdminLogin} />
+          </>
+        )}
 
-				<div className="push"></div>
-				<Footer />
-			</div>
-		</Router>
-	);
+        <div className="push"></div>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;

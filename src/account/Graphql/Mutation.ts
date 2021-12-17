@@ -194,3 +194,11 @@ export const GET_SPECIAL_TESTS = gql`
     }
   }
 `;
+
+export const CREATE_GENERAL_TEST_SET = gql`
+  mutation createGeneralTestSet($questions: String!) {
+    createGeneralTestSet(questions: $questions) {
+      questions
+    }
+  }
+`

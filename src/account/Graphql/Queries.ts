@@ -33,3 +33,12 @@ export const GET_ALL_BLOGS = gql`
     }
   }
 `;
+
+export const GET_GENERAL_TEST_SETS = gql`
+query getGeneralTestSets {
+  getGeneralTestSets {
+    id
+    questions 
+  }
+}
+`;

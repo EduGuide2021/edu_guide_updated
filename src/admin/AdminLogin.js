@@ -45,7 +45,7 @@ function AdminLogIn() {
         </form>
         <br></br>
         <Link
-          to="/adminpage"
+          to="/admin-dashboard"
           className="reg-btn"
           value="Log In"
           onClick={handleLogin}
