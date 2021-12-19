@@ -51,11 +51,17 @@ img {
   transition: 0.2s;
   text-decoration: none;
 }
+.navbar__link img{
+  position: absolute;
+  margin-left: -70px;
+  margin-top: -10px;
+}
 .logo-label{
  /* float: center; */
+ position: relative;
  /* display: block;  */
 color: white;
- margin-bottom: 300px;
+ margin-top: 300px;
  
  
  font-size: 200%;
