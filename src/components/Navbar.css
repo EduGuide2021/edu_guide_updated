@@ -7,9 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 40%;
   /* margin: -5%; */
   /* margin-left: -9%; */
-  margin-bottom: -7.5%;
+  /* margin-bottom: -7.5%; */
 }
 
 .navbar__logo {
@@ -27,13 +28,20 @@ img {
   font-size: 20px;
 }
 .navbar__links {
-  flex: 0.5;
+  
+  /* flex: 0.5; */
+  float: center;
   display: flex;
-  margin-top: -1vw;
-  margin-left: -58%;
-  margin-right: 10%;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  background-color: var(--eduguide_blue);
+  /* margin-top: -1vw; */
+  /* margin-left: -58%; */
+  /* margin-right: 10%; */
   justify-content: space-around;
   color: var(--eduguide_blue) !important;
+  
 }
 
 .navbar__link {
@@ -43,6 +51,16 @@ img {
   transition: 0.2s;
   text-decoration: none;
 }
+.logo-label{
+ /* float: center; */
+ /* display: block;  */
+color: white;
+ margin-bottom: 300px;
+ 
+ 
+ font-size: 200%;
+}
+
 
 .navbar__link:hover {
   color: var(--eduguide_orange);
