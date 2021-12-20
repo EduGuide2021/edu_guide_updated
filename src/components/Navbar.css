@@ -39,7 +39,7 @@ img {
   /* margin-top: -1vw; */
   /* margin-left: -58%; */
   /* margin-right: 10%; */
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: var(--eduguide_blue) !important;
   
 }

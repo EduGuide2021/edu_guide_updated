@@ -22,7 +22,8 @@ function Home() {
     <div align="center">
       <br></br>
       <h1>Decide your future.</h1>
-      <p>
+      <img src="./icons/Line.png" class="line"></img>
+      <p className="break">
         EduGuide is a Career Decision Tool optimized to help you make a decision
         in finding the right program corresponding to your strengths, interest,
         and skills.

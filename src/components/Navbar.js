@@ -46,6 +46,7 @@ function NavBar() {
               <label className="logo-label">EduGuide</label>
             </Link>
             </li>
+            
             <li className="navbar__link">
               <Link to="/" className="navbar__link">
                 Home
