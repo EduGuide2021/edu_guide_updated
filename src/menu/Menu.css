@@ -105,10 +105,11 @@ h6 {
 	padding: 0.2vw 1vw;
 	margin-left: 52%;
 	margin-top: -10%;
+	background-color: white;
 	/* width: ; */
 	border-width: unset;
 	border-color: var(--eduguide_orange);
-	border-radius: 1vw;
+	border-radius: 0.7vw;
 	font-weight: bold;
 }
 .field {
