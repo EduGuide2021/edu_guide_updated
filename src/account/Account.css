@@ -1,9 +1,19 @@
 
 .sign-form {
+  border: solid var(--eduguide_orange);
+  background-color: peachpuff;
+  border-radius: 10px;
   font-size: 1.55vw;
+  width: 50%;
   color: var(--eduguide_blue);
   margin-left: auto;
   margin-right: auto;
+}
+b{
+  
+  /* line-height: 110px; */
+  font-size: 25px;
+  /* margin-left: 10%; */
 }
 .form-alignment{
   width: 50%;
@@ -32,6 +42,7 @@ form {
 }
 
 .field-input {
+  background-color: peachpuff;
   
   font-family: Ruda;
 	font-size: 1.55vw;
@@ -77,12 +88,12 @@ form {
 }
 
 .reg-btn {
-  font-size: 1.65vw;
-  background-color: var(--eduguide_blue);
-  color: white;
+  font-size: 20px;
+  background-color: white;
+  color: var(--eduguide_blue);
   padding: 0.5vw 2vw;
-  border: none;
-  border-radius: 3vw;
+  border: solid var(--eduguide_orange);
+  border-radius: 10px;
   font-weight: 600;
   text-decoration: none;
 }
