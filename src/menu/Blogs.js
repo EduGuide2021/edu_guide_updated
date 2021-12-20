@@ -35,18 +35,31 @@ function Blogs() {
   return (
     <div align="center">
       <h1>Tell us your career decision journeys/advice!</h1>
+      <img src="./icons/Line.png" class="line"></img>
+      <br></br>
+      <text className="page-desc">Send over your stories here</text>
+      <br></br>
+      <text className="page-desc">and we'll share them to EduGuide Community on Facebook</text>
+      <br></br>
+      <br></br>
+      <br></br>
+      
+
       <form align="center" ref={form} onSubmit={sendEmail}>
-      <input type="text" className="blog-field" value={blogValue} onChange={(e)=>setBlogValue(e.target.value)} name="message" />
+      <textarea className="blog-field" value={blogValue} onChange={(e)=>setBlogValue(e.target.value)} name="message" />
       <br></br>
       <br></br>
 
       {header ? (
-        <input className="sub-btn" type="submit" value="Submit" onClick={onSubmitBlog} />
+        <input className="sub-btn-blog" type="submit" value="Submit" onClick={onSubmitBlog} />
       ) : (
         <Link to="/login">
-          <input className="sub-btn" type="submit" value="Submit" />
+          <input className="sub-btn-blog" type="submit" value="Submit" />
         </Link>
       )}
+      <br></br>
+      <br></br>
+      <text className="page-desc">view submissions </text> <u><a className="page-desc" href="#">here</a></u>
       </form>
       <div>
         {data?.getAllBlog?.filter(item=>item?.is_approved || userInfo?.is_admin)?.map(item=>{

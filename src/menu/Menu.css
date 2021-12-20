@@ -2,7 +2,7 @@ h1 {
 	display: block;
 	font-family: Ruda;
 	font-size: 4vw;
-	/* color: var(--eduguide_blue) !important; */
+	color: var(--eduguide_blue) !important;
 	text-align: center;
 	/* margin-top: 2%;
 	margin-bottom: -0.1%; */
@@ -57,6 +57,10 @@ p {
 
 	
 } */
+.page-desc{
+	font-size: 30px;
+	color: var(--eduguide_blue);
+}
 .card-br{
 	display: none;
 }
@@ -93,6 +97,20 @@ h6 {
 	border-radius: 3vw;
 	font-weight: 600;
 }
+.sub-btn-blog {
+	font-family: Ruda;
+	font-size: 1vw;
+	/* background-color: var(--eduguide_orange); */
+	color: var(--eduguide_blue);
+	padding: 0.2vw 1vw;
+	margin-left: 52%;
+	margin-top: -10%;
+	/* width: ; */
+	border-width: unset;
+	border-color: var(--eduguide_orange);
+	border-radius: 1vw;
+	font-weight: bold;
+}
 .field {
 	font-family: Ruda;
 	font-size: 1.55vw;
@@ -113,8 +131,8 @@ h6 {
 	font-size: 1.65vw;
 	color: var(--eduguide_blue);
 	margin-top: 2.5%;
-	width: 70%;
-	height: 3em;
+	width: 60%;
+	height: 7em;
 	border: thick;
 	border-color: var(--eduguide_blue);
 	border-style: solid;
