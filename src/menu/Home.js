@@ -6,11 +6,24 @@ import { useSelector } from "react-redux";
 
 function Home() {
   const header = useSelector((state) => state.header);
+  const job = () => {
+    alert("di ko alam kung ano ilalagay dito haha");
+    window.open("https://www.cioinsight.com/careers/it-top-paying-jobs/")
+  }
+  const career = () => {
+    alert("di ko alam kung ano ilalagay dito haha");
+    window.open("https://www.monster.com/career-advice/article/10-future-careers")
+  }
+  const demand = () => {
+    alert("di ko alam kung ano ilalagay dito haha");
+    window.open("https://blog.coastline.edu/top-10-careers-in-demand-for-2021")
+  }
   return (
     <div align="center">
       <br></br>
       <h1>Decide your future.</h1>
-      <p>
+      <img src="./icons/Line.png" class="line"></img>
+      <p className="break">
         EduGuide is a Career Decision Tool optimized to help you make a decision
         in finding the right program corresponding to your strengths, interest,
         and skills.
@@ -34,7 +47,7 @@ function Home() {
         <Route path="/articles" component={Card} />
         <div className="card-size">
           <a
-            href="https://www.cioinsight.com/careers/it-top-paying-jobs/"
+            onClick={job}
             target="_blank"
           >
             <Card
@@ -45,7 +58,8 @@ function Home() {
           <br className="card-br"/>
             <br className="card-br"/>
           <a
-            href="https://www.monster.com/career-advice/article/10-future-careers"
+          onClick={career}
+            
             target="_blank"
           >
             <Card
@@ -56,7 +70,7 @@ function Home() {
           <br className="card-br"/>
             <br className="card-br"/>
           <a
-            href="https://blog.coastline.edu/top-10-careers-in-demand-for-2021"
+          onClick={demand}
             target="_blank"
           >
             <Card

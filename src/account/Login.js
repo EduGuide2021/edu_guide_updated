@@ -81,14 +81,19 @@ function LogIn() {
         <h1>Log In</h1>
 
         <img src="./icons/Line.png" className="line"></img>
-        <form align="left" className="sign-form">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <form className="sign-form">
           <center>
             <label>
               <b>Username:</b>
               <br className="br-line"></br>
               <input
                 type="text"
-                className="field"
+                className="field-input"
                 name="uname"
                 onChange={(event) => {
                   setUsername(event.target.value);
@@ -102,7 +107,7 @@ function LogIn() {
               <br className="br-line"></br>
               <input
                 type="password"
-                className="field"
+                className="field-input"
                 name="password"
                 onChange={(event) => {
                   setPassword(event.target.value);
@@ -119,8 +124,8 @@ function LogIn() {
         <br></br>
 
         <p>
-          Don't have an account yet? <br></br> <br></br> Sign Up{" "}
-          <b>
+          Don't have an account yet? <Link to="/signup"> Sign Up here</Link>{" "}
+          {/* <b>
             <Link to="/signup" style={{ textDecoration: "none" }}>
               here
             </Link>

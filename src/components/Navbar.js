@@ -26,7 +26,7 @@ function NavBar() {
     <div className="navbar">
       {!userInfo?.is_admin ? (
         <div className="navbar__wrapper">
-          <div className="navbar__logo">
+          {/* <div className="navbar__logo">
             <Link to="/">
               <img
                 src="./images/Logo192.png"
@@ -34,8 +34,19 @@ function NavBar() {
                 className="logo_size"
               />
             </Link>
-          </div>
+          </div> */}
           <ul className="navbar__links">
+          <li className="navbar__link">
+          <Link to="/">
+              <img
+                src="./images/Logo192.png"
+                alt="eduguide logo"
+                className="logo_view"
+              />
+              <label className="logo-label">EduGuide</label>
+            </Link>
+            </li>
+            
             <li className="navbar__link">
               <Link to="/" className="navbar__link">
                 Home
@@ -75,7 +86,12 @@ function NavBar() {
                 Contact
               </Link>
             </li>
-            <div className="login-item">
+            <li className="navbar__link">
+              <Link to="#" className="navbar__link">
+                help
+              </Link>
+            </li>
+            <div className="navbar__link">
               {header ? (
                 <li>
                   <Link to="/mainprofile" className="login-item">
@@ -84,12 +100,13 @@ function NavBar() {
                 </li>
               ) : (
                 <li>
-                  <Link to="/login" className="login-item">
-                    Login
+                  <Link to="/login" className="rounded-yellow-btn">
+                    Log In
                   </Link>
                 </li>
               )}
-
+            </div>
+            <div className="navbar__link">
               {header ? (
                 <li>
                   <Link
@@ -103,8 +120,8 @@ function NavBar() {
                   </Link>
                 </li>
               ) : (
-                <li>
-                  <Link to="/signup" className="login-item">
+                <li hidden="true">
+                  <Link to="/signup" className="navbar_link">
                     Sign Up
                   </Link>
                 </li>
