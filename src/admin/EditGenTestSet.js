@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Admin.css";
 
 import GLogin from "../account/GLogin";
@@ -7,10 +7,7 @@ import {
   GET_ALL_USERS,
   GET_GENERAL_TEST_SETS,
 } from "../account/Graphql/Queries";
-import {
-  CREATE_GENERAL_TEST_SET,
-  DELETE_USER,
-} from "../account/Graphql/Mutation";
+import { EDIT_GENERAL_TEST_SET } from "../account/Graphql/Mutation";
 import { useQuery, useMutation } from "@apollo/client";
 import TextArea from "antd/lib/input/TextArea";
 import { message, Select } from "antd";
@@ -36,16 +33,20 @@ const categoriesList = [
   "TOURISM MANAGEMENT",
 ];
 
-function AddGenTestSet() {
+function EditGenTestSet(props) {
   const history = useHistory();
-  const [createGeneralTestSet, { error }] = useMutation(
-    CREATE_GENERAL_TEST_SET
-  );
+  const [editGeneralTestSet, { error }] = useMutation(EDIT_GENERAL_TEST_SET, {
+    refetchQueries: [GET_GENERAL_TEST_SETS],
+  });
   const [genTestSet, setGenTestSet] = useState(
     Array.from({ length: 17 }, (_, i) => {
       return { questionText: "", category: undefined };
     })
   );
+  useEffect(() => {
+    setGenTestSet(JSON.parse(props?.location?.state?.data?.questions));
+  }, []);
+
   const [programs, setPrograms] = useState(categoriesList);
 
   const onQuestionChange = (index, field, value) => {
@@ -69,18 +70,21 @@ function AddGenTestSet() {
       message.error("Please fill all details...", 2);
       return;
     }
-    await createGeneralTestSet({
-      variables: { questions: JSON.stringify(genTestSet) },
+    await editGeneralTestSet({
+      variables: {
+        questions: JSON.stringify(genTestSet),
+        id: props?.location?.state?.data?.id,
+      },
       refetchQueries: [GET_GENERAL_TEST_SETS],
     });
-    message.success("Test Added...");
+    message.success("Test Edited Successfully...");
     history.goBack();
   };
 
   return (
     <body>
       <div align="center">
-        <h1>Add new General Test Set</h1>
+        <h1>Edit General Test Set</h1>
         <img src="./icons/Line.png" className="line"></img>
         <div
           style={{
@@ -169,4 +173,4 @@ function AddGenTestSet() {
   );
 }
 
-export default AddGenTestSet;
+export default EditGenTestSet;

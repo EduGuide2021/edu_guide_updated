@@ -52,6 +52,13 @@ import AddGenTestSet from "./admin/AddGenTestSet";
 import { useDispatch, useSelector } from "react-redux";
 import { setAccountDetails } from "./store/actions/header";
 import { GET_CURRENT_USER } from "./account/Graphql/Mutation";
+import EditGenTestSetsList from "./admin/EditGenTestSetsList";
+import EditGenTestSet from "./admin/EditGenTestSet";
+import CustomizeSpecTest from "./admin/CustomizeSpecTest";
+import ChooseSpecTestProgram from "./admin/ChooseSpecTestProgram";
+import AddSpecTestSet from "./admin/AddSpecTestSet";
+import EditSpecTestSetsList from "./admin/EditSpecTestSetsList";
+import EditSpecTestSet from "./admin/EditSpecTestSet";
 
 function App() {
   const dispatch = useDispatch();
@@ -117,6 +124,33 @@ function App() {
               component={CustomizeGenTest}
             />
             <Route exact path="/add-gen-test-set" component={AddGenTestSet} />
+            <Route
+              exact
+              path="/edit-gen-test-sets-list"
+              component={EditGenTestSetsList}
+            />
+            <Route exact path="/edit-gen-test-set" component={EditGenTestSet} />
+            <Route
+              exact
+              path="/customize-spec-test"
+              component={CustomizeSpecTest}
+            />
+            <Route
+              exact
+              path="/choose-spec-test-program"
+              component={ChooseSpecTestProgram}
+            />
+            <Route exact path="/add-spec-test-set" component={AddSpecTestSet} />
+            <Route
+              exact
+              path="/edit-spec-test-sets-list"
+              component={EditSpecTestSetsList}
+            />
+            <Route
+              exact
+              path="/edit-spec-test-set"
+              component={EditSpecTestSet}
+            />
             {/* <Route exact path="/forgotpass" component={ForgotPassword} /> */}
           </>
         ) : (

@@ -3,7 +3,8 @@ import gql from "graphql-tag";
 export const CREATE_USER = gql`
   mutation createUser(
     $email: String!
-    $name: String!
+    $first_name: String!
+    $last_name: String!
     $username: String!
     $levelStrand: String!
     $school: String!
@@ -11,7 +12,8 @@ export const CREATE_USER = gql`
   ) {
     createUser(
       email: $email
-      name: $name
+      first_name: $first_name
+      last_name: $last_name
       username: $username
       levelStrand: $levelStrand
       school: $school
@@ -19,7 +21,8 @@ export const CREATE_USER = gql`
     ) {
       id
       email
-      name
+      first_name
+      last_name
       username
       levelStrand
       school
@@ -38,7 +41,8 @@ export const USER_LOGIN = gql`
       user {
         id
         email
-        name
+        first_name
+        last_name
         username
         levelStrand
         school
@@ -168,7 +172,8 @@ export const GET_CURRENT_USER = gql`
       user {
         id
         email
-        name
+        first_name
+        last_name
         username
         levelStrand
         school
@@ -198,6 +203,31 @@ export const GET_SPECIAL_TESTS = gql`
 export const CREATE_GENERAL_TEST_SET = gql`
   mutation createGeneralTestSet($questions: String!) {
     createGeneralTestSet(questions: $questions) {
+      questions
+    }
+  }
+`
+
+export const EDIT_GENERAL_TEST_SET = gql`
+  mutation editGeneralTestSet($questions: String! $id: ID!) {
+    editGeneralTestSet(questions: $questions id:$id) {
+      questions
+    }
+  }
+`
+
+export const CREATE_SPECIAL_TEST_SET = gql`
+  mutation createSpecialTestSet($questions: String! $program: String!) {
+    createSpecialTestSet(questions: $questions program: $program) {
+      questions
+      program
+    }
+  }
+`
+
+export const EDIT_SPECIAL_TEST_SET = gql`
+  mutation editSpecialTestSet($questions: String! $id: ID!) {
+    editSpecialTestSet(questions: $questions id:$id) {
       questions
     }
   }

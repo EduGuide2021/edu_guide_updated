@@ -6,14 +6,14 @@ import { Users } from "../../Entities/Users";
 
 export const GET_ALL_BLOGS = {
   type: new GraphQLList(BlogType),
-  async resolve(){
-    const blogs=await Blog.find();
-    let blogsDetail=blogs?.map(async(blog)=>{
-      let user=await Users.findOne({id:blog?.creator})
-      if(user){
-        return {...blog,creator:user.name}
+  async resolve() {
+    const blogs = await Blog.find();
+    let blogsDetail = blogs?.map(async (blog) => {
+      let user = await Users.findOne({ id: blog?.creator })
+      if (user) {
+        return { ...blog, creator: user.first_name + user.last_name }
       }
-      return {...blog}
+      return { ...blog }
     })
     console.log(blogsDetail)
     return blogsDetail

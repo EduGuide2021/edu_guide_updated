@@ -7,13 +7,13 @@ import { GET_ALL_USERS } from "../account/Graphql/Queries";
 import { DELETE_USER } from "../account/Graphql/Mutation";
 import { useQuery, useMutation } from "@apollo/client";
 
-function CustomizeGenTest() {
+function CustomizeSpecTest() {
   const history = useHistory();
 
   return (
     <body>
       <div align="center">
-        <h1>Customize General Test</h1>
+        <h1>Customize Special Test</h1>
         <img src="./icons/Line.png" className="line"></img>
         <div
           style={{
@@ -32,7 +32,7 @@ function CustomizeGenTest() {
               cursor: "pointer",
               background: "rgba(241, 147, 54, 0.53)",
             }}
-            onClick={() => history.push("/edit-gen-test-sets-list")}
+            onClick={() => history.push("/edit-spec-test-sets-list")}
           >
             Edit Current Sets
           </div>
@@ -45,7 +45,7 @@ function CustomizeGenTest() {
               padding: 30,
               background: "rgba(241, 147, 54, 0.53)",
             }}
-            onClick={() => history.push("/add-gen-test-set")}
+            onClick={() => history.push("/choose-spec-test-program")}
           >
             Add New Set
           </div>
@@ -68,4 +68,4 @@ function CustomizeGenTest() {
   );
 }
 
-export default CustomizeGenTest;
+export default CustomizeSpecTest;

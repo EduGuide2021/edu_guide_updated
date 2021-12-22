@@ -8,6 +8,7 @@ import { Community } from "./Entities/Community";
 import { Blog } from "./Entities/Blog";
 import { SpecialTest } from "./Entities/SpecialTest";
 import { GeneralTestSet } from "./Entities/GeneralTestSet";
+import { SpecialTestSet } from "./Entities/SpecialTestSet";
 
 const main = async () => {
 	await createConnection({
@@ -17,7 +18,7 @@ const main = async () => {
 		password: "",
 		logging: true,
 		synchronize: true,
-		entities: [Users, Community, Blog, SpecialTest, GeneralTestSet],
+		entities: [Users, Community, Blog, SpecialTest, GeneralTestSet, SpecialTestSet],
 	});
 
 	const app = express();

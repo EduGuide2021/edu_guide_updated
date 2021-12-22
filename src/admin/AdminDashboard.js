@@ -70,6 +70,7 @@ function AdminDashboard() {
               padding: 30,
               background: "rgba(241, 147, 54, 0.53)",
             }}
+            onClick={() => history.push("/customize-spec-test")}
           >
             Customize Specialized Test
           </div>
