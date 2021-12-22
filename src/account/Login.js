@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import "./Account.css";
-import GLogin from "./GLogin";
+// import GLogin from "./GLogin";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import { logoutUser, setAccountDetails } from "../store/actions/header";
 import { button, buttonText, icon } from "./GLogin.css";
 import { USER_LOGIN } from "../account/Graphql/Mutation";
