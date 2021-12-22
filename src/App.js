@@ -57,8 +57,9 @@ import EditGenTestSet from "./admin/EditGenTestSet";
 import CustomizeSpecTest from "./admin/CustomizeSpecTest";
 import ChooseSpecTestProgram from "./admin/ChooseSpecTestProgram";
 import AddSpecTestSet from "./admin/AddSpecTestSet";
-import EditSpecTestSetsList from "./admin/EditSpecTestSetsList";
+import EditSpecTestProgramList from "./admin/EditSpecTestProgramList";
 import EditSpecTestSet from "./admin/EditSpecTestSet";
+import EditSpecialTestSetList from "./admin/EditSpecialTestSetList";
 
 function App() {
   const dispatch = useDispatch();
@@ -143,8 +144,13 @@ function App() {
             <Route exact path="/add-spec-test-set" component={AddSpecTestSet} />
             <Route
               exact
-              path="/edit-spec-test-sets-list"
-              component={EditSpecTestSetsList}
+              path="/edit-spec-test-program-list"
+              component={EditSpecTestProgramList}
+            />
+            <Route
+              exact
+              path="/edit-spec-test-program-sets"
+              component={EditSpecialTestSetList}
             />
             <Route
               exact

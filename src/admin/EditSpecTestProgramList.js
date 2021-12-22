@@ -3,22 +3,36 @@ import "./Admin.css";
 
 import GLogin from "../account/GLogin";
 import { Link, useHistory } from "react-router-dom";
-import { GET_SPECIAL_TEST_SETS } from "../account/Graphql/Queries";
-import { DELETE_USER } from "../account/Graphql/Mutation";
+import { GET_GENERAL_TEST_SETS } from "../account/Graphql/Queries";
 import { useQuery, useMutation } from "@apollo/client";
-import { GiPencil } from "react-icons/gi";
 
-function EditSpecTestSetsList() {
+const categoriesList = [
+  "COMMUNICATION",
+  "ENGLISH",
+  "JOURNALISM",
+  "EARLY CHILDHOOD EDUCATION",
+  "ELEMENTARY EDUCATION",
+  "SECONDARY EDUCATION",
+  "SPECIAL NEEDS EDUCATION",
+  "PSYCHOLOGY",
+  "MANAGEMENT ACCOUNTING",
+  "BUSINESS ADMINISTRATION MAJOR IN MARKETING",
+  "ENTREPRENEURSHIP",
+  "COMPUTER SCIENCE",
+  "HOSPITALITY MANAGEMENT",
+  "NURSING",
+  "ACCOUNTANCY",
+  "INFORMATION TECHNOLOGY",
+  "TOURISM MANAGEMENT",
+];
+
+function ChooseSpecTestProgram() {
   const history = useHistory();
-  const { data, loading } = useQuery(GET_SPECIAL_TEST_SETS);
-  if (loading) {
-    return <></>;
-  }
 
   return (
     <body>
       <div align="center">
-        <h1>Special Test Sets</h1>
+        <h1>Choose Special Test Edit Program</h1>
         <img src="./icons/Line.png" className="line"></img>
         <div
           style={{
@@ -30,7 +44,7 @@ function EditSpecTestSetsList() {
             gap: 30,
           }}
         >
-          {data?.getSpecialTestSets?.map((item, index) => (
+          {categoriesList?.map((item, index) => (
             <div
               style={{
                 width: "30%",
@@ -42,13 +56,10 @@ function EditSpecTestSetsList() {
                 justifyContent: "center",
               }}
               onClick={() =>
-                history.push("/edit-spec-test-set", { data: item })
+                history.push("/edit-spec-test-program-sets", { program: item })
               }
             >
-              <p style={{ marginBottom: 0 }}>SET {index + 1}</p>
-              <GiPencil
-                style={{ marginLeft: 10, fontSize: 20, color: "#16367c" }}
-              />
+              <p style={{ marginBottom: 0 }}>{item}</p>
             </div>
           ))}
         </div>
@@ -70,4 +81,4 @@ function EditSpecTestSetsList() {
   );
 }
 
-export default EditSpecTestSetsList;
+export default ChooseSpecTestProgram;

@@ -32,7 +32,7 @@ function CustomizeSpecTest() {
               cursor: "pointer",
               background: "rgba(241, 147, 54, 0.53)",
             }}
-            onClick={() => history.push("/edit-spec-test-sets-list")}
+            onClick={() => history.push("/edit-spec-test-program-list")}
           >
             Edit Current Sets
           </div>
