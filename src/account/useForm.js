@@ -4,12 +4,13 @@ import { callbackify } from "util";
 const useForm = (validate) => {
   const [values, setValues] = useState({
     email: "",
-    name: "",
+    firstname: "",
+    lastname: "",
     username: "",
     levelStrand: "",
     school: "",
     password: "",
-    password2: ""
+    password2: "",
   });
 
   const [errors, setErrors] = useState({});

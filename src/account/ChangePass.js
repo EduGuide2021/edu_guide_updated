@@ -4,15 +4,16 @@ import { UPDATE_PASSWORD } from "../account/Graphql/Mutation";
 import { useMutation } from "@apollo/client";
 
 import { Link } from "react-router-dom";
+import { message } from "antd";
 function ChangePass() {
   const [username, setUsername] = useState("");
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
   const [updatePassword, { error }] = useMutation(UPDATE_PASSWORD);
-
   if (error) {
-    return <h1> {error} </h1>;
+    message.error(error.message);
+    return <h1>{error?.message}</h1>;
   }
   return (
     <div align="center">
@@ -55,22 +56,25 @@ function ChangePass() {
         </label>
       </form>
       <div className="pass-btns">
-        <Link
-          to="/save"
+        <button
           className="reg-btn"
           value="Save"
           onClick={() => {
-            updatePassword({
-              variables: {
-                username: username,
-                oldPassword: currentPassword,
-                newPassword: newPassword,
-              },
-            });
+            try {
+              updatePassword({
+                variables: {
+                  username: username,
+                  oldPassword: currentPassword,
+                  newPassword: newPassword,
+                },
+              });
+            } catch (error) {
+              message.error(error?.message || "Something went wrong");
+            }
           }}
         >
           Save
-        </Link>
+        </button>
         <Link to="/mainprofile" className="reg-btn" value="Cancel">
           Cancel
         </Link>

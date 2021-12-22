@@ -4,7 +4,8 @@ export const GET_ALL_USERS = gql`
   query getAllUsers {
     getAllUsers {
       id
-      name
+      first_name
+      last_name
       email
       username
       levelStrand
@@ -39,6 +40,15 @@ query getGeneralTestSets {
   getGeneralTestSets {
     id
     questions 
+  }
+}`;
+
+export const GET_SPECIAL_TEST_SETS = gql`
+query getSpecialTestSets {
+  getSpecialTestSets {
+    id
+    questions
+    program
   }
 }
 `;

@@ -127,12 +127,12 @@ function LogIn() {
           </b>
           <br></br>
           <br></br>
-          Log in as
+          {/* Log in as
           <b>
             <Link to="/adminlogin" style={{ textDecoration: "none" }}>
               Admin
             </Link>
-          </b>
+          </b> */}
         </p>
       </div>
     </body>

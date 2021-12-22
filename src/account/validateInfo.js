@@ -3,10 +3,16 @@ import validator from "validator";
 export default function validateInfo(values) {
   let errors = {};
 
-  if (!values.name.trim()) {
-    errors.name = "Name required";
-  } else if (!/^[A-Za-z]+/.test(values.name.trim())) {
-    errors.name = "Enter a valid name";
+  if (!values.firstname.trim()) {
+    errors.firstname = "firstname required";
+  } else if (!/^[A-Za-z]+/.test(values.firstname.trim())) {
+    errors.firstname = "Enter a valid firstname";
+  }
+
+  if (!values.lastname.trim()) {
+    errors.lastname = "lastname required";
+  } else if (!/^[A-Za-z]+/.test(values.lastname.trim())) {
+    errors.lastname = "Enter a valid lastname";
   }
 
   if (!values.email) {

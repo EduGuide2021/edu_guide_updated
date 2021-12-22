@@ -14,8 +14,10 @@ import { GET_ALL_POSTS } from "./Queries/Community";
 import { GET_ALL_BLOGS } from "./Queries/Blog";
 import { CREATE_BLOG, DELETE_BLOG } from "./Mutations/Blog";
 import { GET_SPECIAL_TESTS, UPDATE_SPECIAL_TEST } from "./Mutations/SpecialTest";
-import { CREATE_GENERAL_TEST_SET } from "./Mutations/GeneralTestSet";
+import { CREATE_GENERAL_TEST_SET, EDIT_GENERAL_TEST_SET } from "./Mutations/GeneralTestSet";
+import { CREATE_SPECIAL_TEST_SET, EDIT_SPECIAL_TEST_SET } from "./Mutations/SpecialTestSet";
 import { GET_GENERAL_TEST_SETS } from "./Queries/GeneralTestSet";
+import { GET_SPECIAL_TEST_SETS } from "./Queries/SpecialTestSet";
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQuery",
@@ -23,7 +25,8 @@ const RootQuery = new GraphQLObjectType({
     getAllUsers: GET_ALL_USERS,
     getAllPost: GET_ALL_POSTS,
     getAllBlog: GET_ALL_BLOGS,
-    getGeneralTestSets: GET_GENERAL_TEST_SETS
+    getGeneralTestSets: GET_GENERAL_TEST_SETS,
+    getSpecialTestSets: GET_SPECIAL_TEST_SETS
   },
 });
 
@@ -49,6 +52,10 @@ const Mutation = new GraphQLObjectType({
     updateSpecialTest: UPDATE_SPECIAL_TEST,
 
     createGeneralTestSet: CREATE_GENERAL_TEST_SET,
+    editGeneralTestSet: EDIT_GENERAL_TEST_SET,
+
+    createSpecialTestSet: CREATE_SPECIAL_TEST_SET,
+    editSpecialTestSet: EDIT_SPECIAL_TEST_SET,
   },
 });
 

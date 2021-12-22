@@ -9,17 +9,22 @@ export const CREATE_USER = {
   type: UserType,
   args: {
     email: { type: GraphQLString },
-    name: { type: GraphQLString },
+    first_name: { type: GraphQLString },
+    last_name: { type: GraphQLString },
     username: { type: GraphQLString },
     levelStrand: { type: GraphQLString },
     school: { type: GraphQLString },
     password: { type: GraphQLString },
   },
   async resolve(parent: any, args: any) {
-    const { email, name, username, levelStrand, school, password } = args;
+    const { email, first_name, last_name, username, levelStrand, school, password } = args;
     let user = await Users.findOne({ email: email })
     if (user) {
       throw new Error("Email already exist");
+    }
+    let userNameExist = await Users.findOne({ username: username })
+    if (userNameExist) {
+      throw new Error("Username already exist");
     }
     let is_admin = false;
     if (username === 'admin') {
@@ -29,7 +34,8 @@ export const CREATE_USER = {
     bcrypt.hash(password, 10).then(async (hash: string) => {
       await Users.insert({
         email,
-        name,
+        first_name: first_name,
+        last_name: last_name,
         username,
         levelStrand,
         school,

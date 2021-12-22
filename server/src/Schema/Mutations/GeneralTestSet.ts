@@ -19,3 +19,16 @@ export const CREATE_GENERAL_TEST_SET = {
         return args;
     },
 };
+
+export const EDIT_GENERAL_TEST_SET = {
+    type: GeneralTestSetType,
+    args: {
+        questions: { type: GraphQLString },
+        id: { type: GraphQLID }
+    },
+    async resolve(parent: any, args: any) {
+        const { questions, id } = args;
+        await GeneralTestSet.update({ id: id }, { questions: questions });
+        return args;
+    },
+};

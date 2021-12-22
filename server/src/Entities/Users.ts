@@ -6,7 +6,10 @@ export class Users extends BaseEntity {
   id!: number;
 
   @Column()
-  name!: string;
+  first_name!: string;
+
+  @Column()
+  last_name!: string;
 
   @Column()
   email!: string;
@@ -26,12 +29,12 @@ export class Users extends BaseEntity {
   @Column()
   is_admin!: boolean;
 
-  @Column({default:""})
+  @Column({ default: "" })
   general_test_score!: string;
 
-  @Column({default:0})
+  @Column({ default: 0 })
   general_test_count!: number;
 
-  @Column({default:0})
+  @Column({ default: 0 })
   special_test_count!: number;
 }

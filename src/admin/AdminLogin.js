@@ -69,7 +69,7 @@ function AdminLogIn() {
         <br></br>
         Not an admin? LogIn
         <b>
-          <Link to="/adminlogin" style={{ textDecoration: "none" }}>
+          <Link to="/login" style={{ textDecoration: "none" }}>
             here
           </Link>
         </b>
