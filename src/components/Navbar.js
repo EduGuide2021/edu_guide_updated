@@ -36,17 +36,17 @@ function NavBar() {
             </Link>
           </div> */}
           <ul className="navbar__links">
-          <li className="navbar__link">
-          <Link to="/">
-              <img
-                src="./images/Logo192.png"
-                alt="eduguide logo"
-                className="logo_view"
-              />
-              <label className="logo-label">EduGuide</label>
-            </Link>
+            <li className="navbar__link">
+              <Link to="/">
+                <img
+                  src="./images/Logo192.png"
+                  alt="eduguide logo"
+                  className="logo_view"
+                />
+                <label className="logo-label">EduGuide</label>
+              </Link>
             </li>
-            
+
             <li className="navbar__link">
               <Link to="/" className="navbar__link">
                 Home
@@ -95,7 +95,7 @@ function NavBar() {
               {header ? (
                 <li>
                   <Link to="/mainprofile" className="login-item">
-                    <p> Hi {header}! </p>
+                    <p className="user-name"> Hi {header}! </p>
                   </Link>
                 </li>
               ) : (
@@ -173,7 +173,7 @@ function NavBar() {
               {header ? (
                 <li>
                   <Link to="/mainprofile" className="login-item">
-                    <p> Hi {header}! </p>
+                    <p className="user-name"> Hi {header}! </p>
                   </Link>
                 </li>
               ) : (
