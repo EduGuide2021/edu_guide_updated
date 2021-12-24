@@ -57,12 +57,12 @@ export const USER_LOGIN = gql`
 
 export const UPDATE_PASSWORD = gql`
   mutation updatePassword(
-    $username: String!
+    $id: ID!
     $oldPassword: String!
     $newPassword: String!
   ) {
     updatePassword(
-      username: $username
+      id: $id
       oldPassword: $oldPassword
       newPassword: $newPassword
     ) {
@@ -74,12 +74,16 @@ export const UPDATE_PASSWORD = gql`
 export const EDIT_PROFILE = gql`
   mutation editProfile(
     $id: ID!
+    $first_name: String!
+    $last_name: String!
     $username: String!
     $levelStrand: String!
     $school: String!
   ) {
     editProfile(
       id: $id
+      newFirstName: $first_name
+      newLastName: $last_name
       newUsername: $username
       newLevelStrand: $levelStrand
       newSchool: $school

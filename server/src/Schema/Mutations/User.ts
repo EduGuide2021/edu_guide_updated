@@ -75,21 +75,22 @@ export const USER_LOGIN = {
 export const UPDATE_PASSWORD = {
   type: MessageType,
   args: {
-    username: { type: GraphQLString },
+    id: { type: GraphQLID },
     oldPassword: { type: GraphQLString },
     newPassword: { type: GraphQLString },
   },
   async resolve(parent: any, args: any) {
-    const { username, oldPassword, newPassword } = args;
-    const user = await Users.findOne({ username: username });
+    const { id, oldPassword, newPassword } = args;
+    const user = await Users.findOne({ id: id });
 
     if (!user) {
       throw new Error("USERNAME DOESNT EXIST");
     }
     const userPassword = user?.password;
-
-    if (oldPassword === userPassword) {
-      await Users.update({ username: username }, { password: newPassword });
+    let hash = await bcrypt.hash(newPassword, 10)
+    const match = await bcrypt.compare(oldPassword, userPassword);
+    if (match) {
+      await Users.update({ id: id }, { password: hash });
 
       return { successful: true, message: "PASSWORD UPDATED" };
     } else {
@@ -102,18 +103,22 @@ export const EDIT_PROFILE = {
   type: MessageType,
   args: {
     id: { type: GraphQLID },
+    newFirstName: { type: GraphQLString },
+    newLastName: { type: GraphQLString },
     newUsername: { type: GraphQLString },
     newLevelStrand: { type: GraphQLString },
     newSchool: { type: GraphQLString },
   },
   async resolve(parent: any, args: any) {
-    const { id, newUsername, newLevelStrand, newSchool } = args;
+    const { id, newFirstName, newLastName, newUsername, newLevelStrand, newSchool } = args;
     const user = await Users.findOne({ id: id });
 
     if (user) {
       await Users.update(
         { id: id },
         {
+          first_name: newFirstName,
+          last_name: newLastName,
           username: newUsername,
           levelStrand: newLevelStrand,
           school: newSchool,

@@ -9,6 +9,8 @@ import { setAccountDetails } from "../store/actions/header";
 
 function EditProfile() {
   const userInfo = JSON.parse(localStorage.getItem("user"));
+  const [firstname, setFirstname] = useState(userInfo?.first_name);
+  const [lastname, setLastname] = useState(userInfo?.last_name);
   const [username, setUsername] = useState(userInfo?.username);
   const [levelStrand, setLevelStrand] = useState(userInfo?.levelStrand);
   const [school, setSchool] = useState(userInfo?.school);
@@ -50,6 +52,32 @@ function EditProfile() {
           </td>
           <td>
             <form className="edit-form">
+              <label>
+                <b>First Name:</b>
+                <input
+                  type="text"
+                  className="edit-field"
+                  name="uname"
+                  value={firstname}
+                  onChange={(event) => {
+                    setFirstname(event.target.value);
+                  }}
+                />
+              </label>
+              <br></br>
+              <label>
+                <b>Last Name::</b>
+                <input
+                  type="text"
+                  className="edit-field"
+                  name="uname"
+                  value={lastname}
+                  onChange={(event) => {
+                    setLastname(event.target.value);
+                  }}
+                />
+              </label>
+              <br></br>
               <label>
                 <b>Username:</b>
                 <input
@@ -104,6 +132,8 @@ function EditProfile() {
               editProfile({
                 variables: {
                   id: userInfo?.id,
+                  first_name: firstname,
+                  last_name: lastname,
                   username: username,
                   levelStrand: levelStrand,
                   school: school,
@@ -111,6 +141,8 @@ function EditProfile() {
               }).then(() => {
                 let updatedUser = {
                   ...userInfo,
+                  first_name: firstname,
+                  last_name: lastname,
                   username: username,
                   levelStrand: levelStrand,
                   school: school,

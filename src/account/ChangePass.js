@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Account.css";
 import { UPDATE_PASSWORD } from "../account/Graphql/Mutation";
 import { useMutation } from "@apollo/client";
@@ -6,9 +7,11 @@ import { useMutation } from "@apollo/client";
 import { Link } from "react-router-dom";
 import { message } from "antd";
 function ChangePass() {
-  const [username, setUsername] = useState("");
+  const history = useHistory();
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
+  const [confirmNewPassword, setConfirmNewPassword] = useState("");
+  const userInfo = JSON.parse(localStorage.getItem("user"));
 
   const [updatePassword, { error }] = useMutation(UPDATE_PASSWORD);
   if (error) {
@@ -20,19 +23,7 @@ function ChangePass() {
       <h3>Change Password</h3>
       <form className="pass-form">
         <label>
-          <b>Username:</b>
-          <input
-            type="username"
-            className="pass-field"
-            name="username"
-            onChange={(event) => {
-              setUsername(event.target.value);
-            }}
-          />
-        </label>
-        <br></br>
-        <label>
-          <b>Password:</b>
+          <b>Old Password:</b>
           <input
             type="password"
             className="pass-field"
@@ -54,20 +45,44 @@ function ChangePass() {
             }}
           />
         </label>
+        <br></br>
+        <label>
+          <b>Confirm New Password:</b>
+          <input
+            type="password"
+            className="pass-field"
+            name="npassword"
+            onChange={(event) => {
+              setConfirmNewPassword(event.target.value);
+            }}
+          />
+        </label>
       </form>
       <div className="pass-btns">
         <button
           className="reg-btn"
           value="Save"
-          onClick={() => {
+          onClick={async () => {
             try {
-              updatePassword({
+              if (newPassword?.length < 8) {
+                message.error("Password must be 8 character long");
+                return;
+              }
+              if (newPassword !== confirmNewPassword) {
+                message.error(
+                  "New password and confirm new password does not match.."
+                );
+                return;
+              }
+              await updatePassword({
                 variables: {
-                  username: username,
+                  id: userInfo?.id,
                   oldPassword: currentPassword,
                   newPassword: newPassword,
                 },
               });
+              message.success("Password changed successfully");
+              history.goBack();
             } catch (error) {
               message.error(error?.message || "Something went wrong");
             }
