@@ -18,7 +18,11 @@ export const GET_ALL_POSTS = gql`
   query getAllPost {
     getAllPost {
       id
-      comment  
+      comment
+      creator 
+      comments{
+        commentText
+      } 
     }
   }
 `;

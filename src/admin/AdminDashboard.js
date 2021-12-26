@@ -58,6 +58,7 @@ function AdminDashboard() {
               cursor: "pointer",
               background: "rgba(241, 147, 54, 0.53)",
             }}
+            onClick={() => history.push("/community")}
           >
             Community
           </div>

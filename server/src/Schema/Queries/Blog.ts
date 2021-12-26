@@ -11,11 +11,10 @@ export const GET_ALL_BLOGS = {
     let blogsDetail = blogs?.map(async (blog) => {
       let user = await Users.findOne({ id: blog?.creator })
       if (user) {
-        return { ...blog, creator: user.first_name + user.last_name }
+        return { ...blog, creator: user.first_name + " " + user.last_name }
       }
       return { ...blog }
     })
-    console.log(blogsDetail)
     return blogsDetail
   },
 };

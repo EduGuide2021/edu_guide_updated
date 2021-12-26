@@ -8,5 +8,6 @@ export class Community extends BaseEntity {
   @Column()
   comment?: string;
 
-  
+  @Column()
+  creator!: number;
 }

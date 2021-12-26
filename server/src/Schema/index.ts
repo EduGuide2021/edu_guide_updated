@@ -18,6 +18,7 @@ import { CREATE_GENERAL_TEST_SET, EDIT_GENERAL_TEST_SET } from "./Mutations/Gene
 import { CREATE_SPECIAL_TEST_SET, EDIT_SPECIAL_TEST_SET } from "./Mutations/SpecialTestSet";
 import { GET_GENERAL_TEST_SETS } from "./Queries/GeneralTestSet";
 import { GET_SPECIAL_TEST_SETS } from "./Queries/SpecialTestSet";
+import { CREATE_COMMENT } from "./Mutations/Comment";
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQuery",
@@ -56,6 +57,8 @@ const Mutation = new GraphQLObjectType({
 
     createSpecialTestSet: CREATE_SPECIAL_TEST_SET,
     editSpecialTestSet: EDIT_SPECIAL_TEST_SET,
+
+    createComment: CREATE_COMMENT
   },
 });
 

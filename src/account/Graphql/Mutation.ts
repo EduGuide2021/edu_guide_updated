@@ -102,9 +102,10 @@ export const DELETE_USER = gql`
 `;
 
 export const CREATE_COMMUNITY = gql`
-  mutation createCommunity($comment: String!) {
-    createCommunity(comment: $comment) {
+  mutation createCommunity($comment: String! $creator: ID!) {
+    createCommunity(comment: $comment creator: $creator) {
       comment
+      creator
     }
   }
 `;
@@ -236,3 +237,13 @@ export const EDIT_SPECIAL_TEST_SET = gql`
     }
   }
 `
+
+export const CREATE_COMMENT = gql`
+  mutation createComment($commentType: String! $content: String! $communityId: ID!) {
+    createComment(commentType: $commentType content: $content communityId: $communityId) {
+      commentType
+      content
+      communityId
+    }
+  }
+`;
