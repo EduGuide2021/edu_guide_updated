@@ -44,6 +44,10 @@ p {
 	margin-top: -9vw;
 	color: white;
 }
+.feed-back-label{
+		
+	color: var(--eduguide_blue);
+}
 
 .about__link:hover {
 	color: #f19336;
@@ -64,9 +68,27 @@ p {
 } */
 .contact-us-box {
 	width: 32%;
-	height: 100px;
+	height: 250px;
 	border: 2px solid var(--eduguide_orange);
   }
+  .contact-us-box text{
+	margin-left: 10%;
+	color: var(--eduguide_blue);
+  }
+  .contact-us-box a{
+	display: block;
+	margin-left: 5%;
+	margin-top: 1%;
+	
+  }
+  .social-icons {
+	display: inline-block;
+	/* padding: 2%; */
+	/* margin-left: 10px; */
+	/* margin-top: 2%; */
+	
+	width: 10%;
+}
 .page-desc{
 	font-size: 30px;
 	color: var(--eduguide_blue);
@@ -99,12 +121,12 @@ h6 {
 
 .sub-btn {
 	font-family: Ruda;
-	font-size: 1.65vw;
-	background-color: var(--eduguide_orange);
+	font-size: 15px;
+	background-color: white;
 	color: var(--eduguide_blue);
-	padding: 0.5vw 2vw;
-	border: none;
-	border-radius: 3vw;
+	padding: 5px 15px;
+	border: solid var(--eduguide_orange);
+	border-radius: 10px;
 	font-weight: 600;
 }
 .sub-btn-blog {
@@ -157,21 +179,35 @@ h6 {
 }
 
 .contact-field {
+	
 	font-size: 1.65vw;
 	color: var(--eduguide_blue);
-	width: 60%;
-	height: 5em;
-	border: thick;
+	width: 70%;
+	/* height: 5em; */
+	border: 2px;
 	border-color: var(--eduguide_blue);
 	border-style: solid;
 	text-align: initial;
 }
-
-.social-icons {
-	display: inline-block;
-	margin-left: 1%;
-	width: 4.5%;
+.contact-field-area {
+	
+	font-size: 1.65vw;
+	color: var(--eduguide_blue);
+	width: 70%;
+	height: 5em;
+	border: 2px;
+	border-color: var(--eduguide_blue);
+	border-style: solid;
+	text-align: initial;
 }
+.contact-form strong{
+	font-size: 30px;
+}
+.contact-form{
+	width: 45%;
+}
+
+
 .rounded-yellow-btn{
 	position: absolute;
 	border-radius: 70px;
@@ -436,8 +472,10 @@ h6 {
 		width: 20%;
 	}
 	.feed-back-label{
+		
 		font-size: 20px;
 	}
+	
 	.sub-btn {
 		height: 50px;
 		width: 150px;

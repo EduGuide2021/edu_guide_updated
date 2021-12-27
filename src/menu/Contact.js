@@ -33,34 +33,46 @@ export default function Contact() {
         <center>
         <div className="contact-us-box" align="left">
         <a href="mailto:eduguide.acmt@gmail.com/?subject=Questions and Concerns">
-          <img src="./icons/GMail.png" className="social-icons"></img>
+          <img src="./icons/GMail.png" className="social-icons"></img><text>eduguide.acmt@gmail.com</text>
           </a>
           <br/>
          <a href="https://www.messenger.com/t/110839054741107">
-          <img src="./icons/Messenger.png" className="social-icons"></img>
+          <img src="./icons/Messenger.png" className="social-icons"></img><text>https://m.me/eduguidecmt</text>
           </a>
           <br/>
+         
          <a href="https://www.messenger.com/t/110839054741107">
-          <img src="./icons/facebook-icon.png" className="social-icons"></img>
+          <img src="./icons/facebook-icon.png" className="social-icons"></img><text>https://www.facebook.com/eduguidecmr</text>
+          
           </a>
+          
+          
         </div>
+        <br/>
+        <br/>
+        <img src="./icons/Line.png" class="line"></img>
         </center>
 
         <div>
           <form align="center" ref={form} onSubmit={sendEmail}>
             <label className="feed-back-label">
               <br></br>
-              Send your feedback here
+             Or send your feedback here. We'd love to hear from you to improve EduGuide
               <br></br>
               <br></br>
-              <center>
-              <input type="text" className="contact-field" name="message" />
-              </center>
+              
               {/* <input type="email" className="contact-field" name="email_here" /> */}
             </label>
+            <center>
+              <div className="contact-form" align="right">
+              <strong>Name:  </strong><input type="text" className="contact-field" name="#" /><br/><br/>
+              <strong>Message:  </strong><input type="text" className="contact-field-area" name="message" />
+              <br></br>
             <br></br>
-            <br></br>
-            <input className="sub-btn" type="submit" value="Submit" />
+            <input className="sub-btn" type="submit" value="Submit" align="left"/>
+              </div>
+              </center>
+            
           </form>
         </div>
       </div>
