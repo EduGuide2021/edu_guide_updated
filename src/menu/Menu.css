@@ -62,6 +62,11 @@ p {
 
 	
 } */
+.contact-us-box {
+	width: 32%;
+	height: 100px;
+	border: 2px solid var(--eduguide_orange);
+  }
 .page-desc{
 	font-size: 30px;
 	color: var(--eduguide_blue);
@@ -120,6 +125,7 @@ h6 {
 .field {
 	font-family: Ruda;
 	font-size: 1.55vw;
+	background-color: peachpuff;
 	color: var(--eduguide_blue);
 	/* margin-left: 5%; */
 	margin-bottom: 1vw;
@@ -368,6 +374,15 @@ h6 {
     width:100%;
     margin-bottom:10px;
     padding:10px;
+}
+.col-half {
+	text-align: center;
+	
+    /* border:2px solid green; */
+    width:50%;
+    float:left;
+    height:100%;
+     
 }
 
 .col2 {

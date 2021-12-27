@@ -21,7 +21,7 @@ export default function Contact() {
      
       <div>
         <h1>Connect with us</h1>
-        <div align="center">
+        {/* <div align="center">
           <a href="https://www.messenger.com/t/110839054741107">
           <img src="./icons/Messenger.png" className="social-icons"></img>
           </a>
@@ -29,7 +29,22 @@ export default function Contact() {
           <a href="mailto:eduguide.acmt@gmail.com/?subject=Questions and Concerns">
           <img src="./icons/GMail.png" className="social-icons"></img>
           </a>
+        </div> */}
+        <center>
+        <div className="contact-us-box" align="left">
+        <a href="mailto:eduguide.acmt@gmail.com/?subject=Questions and Concerns">
+          <img src="./icons/GMail.png" className="social-icons"></img>
+          </a>
+          <br/>
+         <a href="https://www.messenger.com/t/110839054741107">
+          <img src="./icons/Messenger.png" className="social-icons"></img>
+          </a>
+          <br/>
+         <a href="https://www.messenger.com/t/110839054741107">
+          <img src="./icons/facebook-icon.png" className="social-icons"></img>
+          </a>
         </div>
+        </center>
 
         <div>
           <form align="center" ref={form} onSubmit={sendEmail}>

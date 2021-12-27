@@ -95,12 +95,12 @@ function SignUp(props) {
       <h1>Create an Account</h1>
       <img src="./icons/Line.png" className="line"></img>
       <div align="center">
-        <form className="sign-form" onSubmit={handleSubmit}>
-          <div className="form-alignment" align="left">
+        <form className="sign-up-form" onSubmit={handleSubmit}>
+          <div className="form-alignment" align="right">
             <label>
               First
-              Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <br className="br-line"></br>
+              Name:
+              
               <input
                 type="text"
                 name="firstname"
@@ -115,8 +115,8 @@ function SignUp(props) {
             <br></br>
             <label>
               Last
-              Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <br className="br-line"></br>
+              Name:
+             
               <input
                 type="text"
                 name="lastname"
@@ -130,8 +130,8 @@ function SignUp(props) {
             </label>
             <br></br>
             <label>
-              Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <br className="br-line"></br>
+              Email:
+             </label>
               <input
                 type="email"
                 name="email"
@@ -139,11 +139,11 @@ function SignUp(props) {
                 onChange={handleSignup}
               />{" "}
               {errors.email && <p className="form-error">{errors.email}</p>}
-            </label>
+            
             <br></br>
             <label>
-              Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <br className="br-line"></br>
+              Username:
+             
               <input
                 type="text"
                 name="username"
@@ -157,8 +157,8 @@ function SignUp(props) {
             </label>
             <br></br>
             <label>
-              Level/Strand:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <br className="br-line"></br>
+              Level/Strand:
+              
               <input
                 type="text"
                 name="levelStrand"
@@ -173,8 +173,8 @@ function SignUp(props) {
             <br></br>
             <label>
               School:
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <br className="br-line"></br>
+              
+              
               <input
                 type="text"
                 name="school"
@@ -186,9 +186,9 @@ function SignUp(props) {
             <br></br>
             <label>
               Password:
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
             </label>
-            <br className="br-line"></br>
+          
             <input
               align="right"
               type="password"
@@ -200,8 +200,8 @@ function SignUp(props) {
             {errors.password && <p className="form-error">{errors.password}</p>}
             <br></br>
             <label>
-              Confirm Password: &nbsp;
-              <br className="br-line"></br>
+              Confirm Password:
+              
               <input
                 type="password"
                 name="password2"
@@ -216,20 +216,21 @@ function SignUp(props) {
           </div>
           <br></br>
 
-          <p>
-            By signing up, you agree to provide your information to create an
+         
+        </form>
+        <p>
+        <input type="checkbox"/>By signing up, you agree to provide your information to create an
             EduGuide user account.
           </p>
           <button className="reg-btn" type="submit" onClick={handlePost}>
             Sign up
           </button>
-        </form>
         <br></br>
         <br></br>
       </div>
 
       <p>
-        Already have an account? <br></br> Log In{" "}
+      Already have an account? <br></br> Log In{" "}
         <b>
           <Link to="/login" style={{ textDecoration: "none" }}>
             here
