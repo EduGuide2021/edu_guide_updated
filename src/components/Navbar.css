@@ -137,6 +137,9 @@ img {
     display: none;
   }
   .navbar__burger {
+    position: absolute;
+  right: 0px;
+    top: 15px;
     display: block;
     width: 100px;
   }
