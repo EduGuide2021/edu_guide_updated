@@ -52,27 +52,27 @@ function AdminLogIn() {
         >
           Log In
         </Link>
-        <p>Log In with</p>
-        <div align="center">
+        {/* <p>Log In with</p> */}
+        {/* <div align="center">
           <GLogin />
-        </div>
+        </div> */}
         <br></br>
-        <p>
+        {/* <p>
           Don't have an account yet? <br></br> <br></br> Sign Up{" "}
           <b>
             <Link to="/signup" style={{ textDecoration: "none" }}>
               here
             </Link>
           </b>
-        </p>
+        </p> */}
+        {/* <br></br>
         <br></br>
-        <br></br>
-        Not an admin? LogIn
-        <b>
+        Not an admin? LogIn */}
+        {/* <b>
           <Link to="/login" style={{ textDecoration: "none" }}>
             here
           </Link>
-        </b>
+        </b> */}
       </div>
     </body>
   );
