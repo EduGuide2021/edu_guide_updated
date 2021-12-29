@@ -45,6 +45,7 @@ function Home() {
       <br></br>
       <Router>
         <Route path="/articles" component={Card} />
+        
         <div className="card-size">
           <a
             onClick={job}

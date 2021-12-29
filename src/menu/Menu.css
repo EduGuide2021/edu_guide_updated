@@ -8,6 +8,10 @@ h1 {
 	margin-bottom: -0.1%; */
 	font-weight: 600 !important;
 }
+.card-size{
+	margin-right: -22%;
+	width: 100%;
+	}
 /* th, td {
 	padding: 15px;
   } */
