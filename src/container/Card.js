@@ -11,6 +11,7 @@ function Card({ title, imageUrl }) {
         
         <br></br>
       </div> */}
+      cio
     </div>
   );
 }
