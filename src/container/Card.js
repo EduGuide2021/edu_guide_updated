@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.css";
-function Card({ title, imageUrl }) {
+function Card({ title, imageUrl, footer }) {
   return (
     <div className="card-container" align="center">
      <p className="card-text">{title}</p> 
@@ -11,7 +11,9 @@ function Card({ title, imageUrl }) {
         
         <br></br>
       </div> */}
-      cio
+      <div align="right">
+      <strong className="card-footer-text">{footer}</strong>
+      </div>
     </div>
   );
 }

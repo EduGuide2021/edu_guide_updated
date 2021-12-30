@@ -54,6 +54,7 @@ function Home() {
             <Card
               title="Top 10 paying jobs in 2021 "
               imageUrl="./images/Top10.png"
+              footer="CIO Insight"
             />
           </a>
           <br className="card-br"/>
@@ -66,6 +67,7 @@ function Home() {
             <Card
               title="Top 10 careers in 10 years"
               imageUrl="./images/TopCareers.png"
+              footer="Indeed"
             />
           </a>
           <br className="card-br"/>
@@ -77,10 +79,28 @@ function Home() {
             <Card
               title="In demand careers"
               imageUrl="./images/InDemand.png"
-              alt="indemand"
+              footer="indemand"
             />
           </a>
           <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+
+          <br></br>
+          <br></br>
+          <br></br>
+         
+          <br></br>
+          <br></br>
+
+          
+          <br></br>
+          <br></br>
+
         </div>
       </Router>
     </div>

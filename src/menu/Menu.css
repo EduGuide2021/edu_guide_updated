@@ -318,13 +318,14 @@ h6 {
 
 .postbtn {
 	cursor: pointer;
-	font-size: 1.5vw;
+	font-size: 20px;
 	transition: 0.2s;
 	text-decoration: none;
 	color: var(--eduguide_blue);
 	background-color: white;
-	border: none;
-	margin-left: 620px;
+	border: solid var(--eduguide_orange);
+	margin-left: 60%;
+	border-radius: 10px;
 }
 
 .postbtn:hover {

@@ -64,19 +64,23 @@ function Community() {
   return (
     <div align="center">
       <h1>Community</h1>
-      <img src="./icons/Line.png" className="line" alt="this is an imag."></img>
+      <text className="page-desc">Post and share your thoughts. let's have a discussion!</text>
+      <br/>
       <div className="commdiv">
         <div className="commicon">
           <img src={icon1} alt="this is an icon"></img>
         </div>
-
+    
         <textarea
           className="commfield"
           name="post"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
+        
       </div>
+      <br/>
+      
       <button
         type="submit"
         className="postbtn"
@@ -87,8 +91,10 @@ function Community() {
           setMessage("");
         }}
       >
+        
         Post
       </button>
+      <img src="./icons/Line.png" className="line" alt="this is an imag."></img>
       {communitiesData &&
         communitiesData?.map((item, index) => (
           <div style={{ marginBottom: 20 }}>
