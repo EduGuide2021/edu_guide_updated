@@ -86,7 +86,11 @@ function NavBar() {
                 Contact
               </Link>
             </li>
-           
+            {/* <li className="navbar__link">
+              <Link to="#" className="navbar__link">
+                help
+              </Link>
+            </li> */}
             <div className="navbar__link">
               {header ? (
                 <li>
