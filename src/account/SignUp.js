@@ -216,15 +216,17 @@ function SignUp(props) {
           </div>
           <br></br>
 
-         
+          <button className="reg-btn" type="submit" onClick={handlePost}>
+            Sign up
+          </button>
         </form>
         <p>
         <input type="checkbox"/>By signing up, you agree to provide your information to create an
             EduGuide user account.
           </p>
-          <button className="reg-btn" type="submit" onClick={handlePost}>
+          {/* <button className="reg-btn" type="submit" onClick={handlePost}>
             Sign up
-          </button>
+          </button> */}
         <br></br>
         <br></br>
       </div>
