@@ -97,7 +97,8 @@ export default class About extends Component {
         Take the Test
       </Link>
       </center>
-
+      <br></br>
+        <Authors></Authors>
       
       </div>
     );
