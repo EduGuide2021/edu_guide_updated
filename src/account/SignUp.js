@@ -95,10 +95,10 @@ function SignUp(props) {
       <h1>Create an Account</h1>
       <img src="./icons/Line.png" className="line"></img>
       <div align="center">
-        <form className="sign-up-form" onSubmit={handleSubmit}>
-          <div className="form-alignment" align="right">
+        <form onSubmit={handleSubmit}>
+          <div className="form-alignment sign-up-form" align="right">
             <label>
-              First
+              * First
               Name:
               
               <input
@@ -114,7 +114,7 @@ function SignUp(props) {
             </label>
             <br></br>
             <label>
-              Last
+              * Last
               Name:
              
               <input
@@ -130,7 +130,7 @@ function SignUp(props) {
             </label>
             <br></br>
             <label>
-              Email:
+              * Email:
              </label>
               <input
                 type="email"
@@ -142,7 +142,7 @@ function SignUp(props) {
             
             <br></br>
             <label>
-              Username:
+              * Username:
              
               <input
                 type="text"
@@ -157,7 +157,7 @@ function SignUp(props) {
             </label>
             <br></br>
             <label>
-              Level/Strand:
+              * Level/Strand:
               
               <input
                 type="text"
@@ -185,7 +185,7 @@ function SignUp(props) {
             </label>
             <br></br>
             <label>
-              Password:
+              * Password:
              
             </label>
           
@@ -200,7 +200,7 @@ function SignUp(props) {
             {errors.password && <p className="form-error">{errors.password}</p>}
             <br></br>
             <label>
-              Confirm Password:
+              * Confirm Password:
               
               <input
                 type="password"

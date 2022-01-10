@@ -57,13 +57,13 @@ form {
   font-family: Ruda;
 	font-size: 1.55vw;
 	color: var(--eduguide_blue);
-	margin-left: 10%;
+	margin-right: 20%;
 	margin-bottom: 1vw;
 	border-top: none;
 	border-right: none;
 	border-left: none;
 	border-width: unset;
-	width: 50%;
+	width: 40%;
 	border-color: var(--eduguide_blue);
 	display: inline-block;
 }
