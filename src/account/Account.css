@@ -9,6 +9,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+.profile-form {
+  border: solid var(--eduguide_orange);
+  background-color: peachpuff;
+  border-radius: 10px;
+  font-size: 1.55vw;
+  width: 100%;
+  color: var(--eduguide_blue);
+  margin-left: auto;
+  margin-right: auto;
+}
 .sign-up-form{
   border: solid var(--eduguide_orange);
   background-color: peachpuff;
@@ -58,6 +68,22 @@ form {
 	font-size: 1.55vw;
 	color: var(--eduguide_blue);
 	margin-right: 20%;
+	margin-bottom: 1vw;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-width: unset;
+	width: 40%;
+	border-color: var(--eduguide_blue);
+	display: inline-block;
+}
+.field-input1 {
+  background-color: peachpuff;
+  
+  font-family: Ruda;
+	font-size: 1.55vw;
+	color: var(--eduguide_blue);
+	margin-right: 10%;
 	margin-bottom: 1vw;
 	border-top: none;
 	border-right: none;

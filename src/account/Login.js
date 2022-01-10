@@ -93,7 +93,7 @@ function LogIn() {
               <br className="br-line"></br>
               <input
                 type="text"
-                className="field-input"
+                className="field-input1"
                 name="uname"
                 onChange={(event) => {
                   setUsername(event.target.value);
@@ -107,7 +107,7 @@ function LogIn() {
               <br className="br-line"></br>
               <input
                 type="password"
-                className="field-input"
+                className="field-input1"
                 name="password"
                 onChange={(event) => {
                   setPassword(event.target.value);

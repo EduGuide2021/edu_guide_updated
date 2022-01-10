@@ -13,12 +13,15 @@ function MainProfile() {
 
   return (
     <div>
-      <h3>My Profile</h3>
+      <h1>My Profile</h1>
+      <center>
+      <img src="./icons/Line.png" class="line"></img>
+      </center>
       <table className="profile-table">
         <tr>
           <td>{icon}</td>
           <td>
-            <form className="edit-form">
+            <form className="profile-form">
               <label>
                 <b>Name:</b>
                 <text type="text" className="edit-field" name="aname">

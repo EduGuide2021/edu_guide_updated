@@ -102,6 +102,20 @@ img {
   background-color: var(--eduguide_orange);
   padding: 5px 20px;
 }
+.logout-yellow-btn {
+  position: absolute;
+  border-radius: 70px;
+  /* border: 2px ; */
+  font-size: 1.55vw;
+  color: #16367c;
+  font-weight: bold;
+  margin-top: -25px;
+  margin-left: -80px;
+  /* font-weight: bold; */
+  /* background-color: var(--eduguide_blue); */
+  background-color: var(--eduguide_orange);
+  padding: 5px 20px;
+}
 
 .user-name {
   color: var(--eduguide_orange) !important;

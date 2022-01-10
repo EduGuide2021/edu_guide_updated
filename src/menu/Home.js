@@ -7,15 +7,15 @@ import { useSelector } from "react-redux";
 function Home() {
   const header = useSelector((state) => state.header);
   const job = () => {
-    alert("di ko alam kung ano ilalagay dito haha");
+    alert("Eduguide");
     window.open("https://www.cioinsight.com/careers/it-top-paying-jobs/")
   }
   const career = () => {
-    alert("di ko alam kung ano ilalagay dito haha");
+    alert("Eduguide");
     window.open("https://www.monster.com/career-advice/article/10-future-careers")
   }
   const demand = () => {
-    alert("di ko alam kung ano ilalagay dito haha");
+    alert("Eduguide");
     window.open("https://blog.coastline.edu/top-10-careers-in-demand-for-2021")
   }
   return (

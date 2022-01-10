@@ -111,7 +111,7 @@ function NavBar() {
                 <li>
                   <Link
                     to="/login"
-                    className="login-item"
+                    className="logout-yellow-btn"
                     onClick={() => {
                       logoutClick();
                     }}
