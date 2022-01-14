@@ -14,7 +14,7 @@ import App from "./App";
 const destination = document.querySelector(".root");
 
 const client = new ApolloClient({
-  uri: "http://localhost:3001/graphql",
+  uri: "https://edu-guide-official.herokuapp.com/graphql",
   cache: new InMemoryCache(),
 });
 

@@ -13,14 +13,23 @@ import { Comment } from "./Entities/Comment";
 
 const main = async () => {
 	await createConnection({
-		type: "mysql",
-		database: "eduguide",
-		username: "root",
-		password: "",
-		logging: true,
-		synchronize: true,
-		entities: [Users, Community, Blog, SpecialTest, GeneralTestSet, SpecialTestSet, Comment],
-	});
+        type: "mysql",
+        host: "exbodcemtop76rnz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        database: "gcwpajc579s1r01o",
+        username: "cmf7iepi3qbe276g",
+        password: "x8yd2cxz0wzis5ic",
+        logging: true,
+        synchronize: true,
+        entities: [
+            Users,
+            Community,
+            Blog,
+            SpecialTest,
+            GeneralTestSet,
+            SpecialTestSet,
+            Comment,
+        ],
+    });
 
 	const app = express();
 	app.use(cors());
