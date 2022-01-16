@@ -18,14 +18,14 @@ function MainProfile() {
       <center>
       <img src="./icons/Line.png" class="line"></img>
       </center>
-      <img src="../components/pics/icon7.png" ></img>
+     <center>
       <div className="container-profile">
         <div className="row-profile">
           <div className="col-myprofile">
-            asdf
+            <img src="/static/media/icon2.9f428e47.png"/>
           </div>
           <div className="col-myprofile">
-            <form className="profile-form">
+            <form className="profile-form" align="left">
               <label>
                 <b>Name:</b>
                 <text type="text" className="edit-field" name="aname">
@@ -68,7 +68,7 @@ function MainProfile() {
             </div>
             </div>
             </div>
-      
+            </center>
       <p className="bottom_p">
         <b>Make the right decision.</b>
       </p>

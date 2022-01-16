@@ -502,6 +502,14 @@ h6 {
     height:100%;
      
 }
+.col-myprofile img {
+	/* text-align: center; */
+	
+    /* border:2px solid green; */
+   margin-top: 20px;
+   margin-left: 50px;
+     
+}
 
 .col2 {
 	text-align: center;
