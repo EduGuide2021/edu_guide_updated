@@ -62,9 +62,11 @@ function Community() {
   }
 
   return (
-    <div align="center">
+    <div >
       <h1>Community</h1>
+      <center>
       <text className="page-desc">Post and share your thoughts. let's have a discussion!</text>
+      </center>
       <br/>
       <div className="commdiv">
         <div className="commicon">
@@ -80,7 +82,7 @@ function Community() {
         
       </div>
       <br/>
-      
+      <center>
       <button
         type="submit"
         className="postbtn"
@@ -94,13 +96,15 @@ function Community() {
         
         Post
       </button>
+
       <img src="./icons/Line.png" className="line" alt="this is an imag."></img>
+      </center>
       {communitiesData &&
         communitiesData?.map((item, index) => (
           <div style={{ marginBottom: 20 }}>
             <div className="commdiv" style={{ marginBottom: -20 }}>
               <div className="commicon">
-                <img src={icon} alt="this is icn"></img>
+               <center> <img src={icon} alt="this is icn"></img></center>
                 <p>{item?.creator}</p>
               </div>
               <textarea
@@ -117,7 +121,7 @@ function Community() {
                 </div>
               ))}
             </div>
-            <Input
+            {/* <Input
               value={item?.commentText}
               onChange={(e) => {
                 let communities = [...communitiesData];
@@ -125,16 +129,22 @@ function Community() {
                 setCommunitiesData(communities);
               }}
               style={{ width: "25%", marginLeft: 80 }}
-            />
+            /> */}
+            <center>
+            <div className="community_btn">
+
+             
             <button
               type="submit"
               className="commentbtn"
-              style={{ marginLeft: 20 }}
+              
               onClick={() => onComment(item)}
             >
               Comment
+             
             </button>
-            <button className="reg-btn">
+           
+            <button className="sharebuttton">
               <FacebookShareButton
                 url={"https://eduguide.ph"}
                 quote={
@@ -149,7 +159,7 @@ function Community() {
             <button type="submit" className="sharebtn">
               <a
                 href="https://forms.office.com/r/Juc6FTPfKC"
-                className="sharebtn"
+                className="rounded-red-button"
                 target="_blank"
               >
                 Report
@@ -167,6 +177,9 @@ function Community() {
                 Delete
               </button>
             )}
+            
+            </div>
+            </center>
           </div>
         ))}
     </div>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "antd/dist/antd.css";
 import { Avatar } from "antd";
+import icon from "../components/pics/icon7.png";
 import { assertNamedType } from "graphql";
 
 function MainProfile() {
@@ -17,10 +18,13 @@ function MainProfile() {
       <center>
       <img src="./icons/Line.png" class="line"></img>
       </center>
-      <table className="profile-table">
-        <tr>
-          <td>{icon}</td>
-          <td>
+      <img src="../components/pics/icon7.png" ></img>
+      <div className="container-profile">
+        <div className="row-profile">
+          <div className="col-myprofile">
+            asdf
+          </div>
+          <div className="col-myprofile">
             <form className="profile-form">
               <label>
                 <b>Name:</b>
@@ -50,20 +54,21 @@ function MainProfile() {
                 </text>
               </label>
             </form>
-          </td>
-        </tr>
-      </table>
-      <div className="profile-btn">
-        <Link to="/editprofile" className="reg-btn" value="Edit">
+            <div>
+        <Link to="/editprofile" className="profile-button" value="Edit">
           Edit
         </Link>
-        <Link to="/changepass" className="reg-btn" value="Change Password">
+        <Link to="/changepass" className="profile-button" value="Change Password">
           Change Password
         </Link>
-        <Link to="/testresults" className="reg-btn" value="Show Test Results">
+        <Link to="/testresults" className="profile-button" value="Show Test Results">
           Show Test Results
         </Link>
       </div>
+            </div>
+            </div>
+            </div>
+      
       <p className="bottom_p">
         <b>Make the right decision.</b>
       </p>
