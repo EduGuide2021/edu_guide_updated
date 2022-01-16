@@ -30,9 +30,9 @@
   margin-right: auto;
 }
 b{
-  
+ 
   /* line-height: 110px; */
-  font-size: 25px;
+  font-size: 28px;
   /* margin-left: 10%; */
 }
 .form-alignment{
@@ -115,12 +115,15 @@ form {
 
 .pass-field {
   color: var(--eduguide_blue);
-  margin-left: 17%;
-  margin-bottom: -1vw;
-  margin-top: -2%;
-  border-width: unset;
-  width: 15%;
-  display: list-item;
+  /* margin-left: 17%; */
+  /* margin-bottom: -1vw; */
+  margin-top: 2%;
+  border: none;
+  border-bottom: solid var(--eduguide_blue);
+  background-color: peachpuff;
+  /* border-width: unset; */
+  width: 100%;
+  /* display: list-item; */
 }
 
 .reg-btn {
@@ -288,6 +291,7 @@ form {
   display: block;
 }
 b{
+  
   
   /* line-height: 110px; */
   font-size: 30px;

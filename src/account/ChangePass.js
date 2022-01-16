@@ -20,10 +20,33 @@ function ChangePass() {
   }
   return (
     <div align="center">
-      <h3>Change Password</h3>
-      <form className="pass-form">
-        <label>
-          <b>Old Password:</b>
+      <h1>Change Password</h1>
+      <center>
+      <img src="./icons/Line.png" class="line"></img>
+      </center>
+      <div className="container-profile">
+        <div className="row-profile profile-form">
+          <div className="col-mypassword">
+          <br></br>
+        <br></br>
+            <img src="/static/media/icon2.9f428e47.png"/>
+          </div>
+          <dvi className="col-mypassword" align="left">
+          <br></br>
+        
+            <b>old password:</b>
+          <br/>
+          <br/>
+            <b>new password:</b>
+            <br/>
+          <br/>
+            <b>confirm new password:</b>
+          </dvi>
+          <div className="col-mypassword">
+      <form >
+        
+      <br></br>
+        
           <input
             type="password"
             className="pass-field"
@@ -32,10 +55,11 @@ function ChangePass() {
               setCurrentPassword(event.target.value);
             }}
           />
-        </label>
+        
         <br></br>
-        <label>
-          <b>New Password:</b>
+        <br></br>
+       
+      
           <input
             type="password"
             className="pass-field"
@@ -44,10 +68,11 @@ function ChangePass() {
               setNewPassword(event.target.value);
             }}
           />
-        </label>
+       
         <br></br>
-        <label>
-          <b>Confirm New Password:</b>
+        <br></br>
+       
+         
           <input
             type="password"
             className="pass-field"
@@ -56,8 +81,11 @@ function ChangePass() {
               setConfirmNewPassword(event.target.value);
             }}
           />
-        </label>
+       
       </form>
+      </div>
+      </div>
+      </div>
       <div className="pass-btns">
         <button
           className="reg-btn"

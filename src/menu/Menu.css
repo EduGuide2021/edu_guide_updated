@@ -510,6 +510,14 @@ h6 {
    margin-left: 50px;
      
 }
+.col-mypassword {
+	/* text-align: center; */
+	
+    /* border:2px solid green; */
+	width:33%;
+    float:left;
+    height:100%;
+}
 
 .col2 {
 	text-align: center;
@@ -520,6 +528,7 @@ h6 {
     height:100%;
      
 }
+
 .col2 img{
     /* border:2px solid green; */
     /* margin-left: 5%; */
