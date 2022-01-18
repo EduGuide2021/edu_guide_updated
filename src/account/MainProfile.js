@@ -27,28 +27,28 @@ function MainProfile() {
           <div className="col-myprofile">
             <form className="profile-form" align="left">
               <label>
-                <b>Name:</b>
+                <b>Name:</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <text type="text" className="edit-field" name="aname">
                   {userInfo?.first_name + " " + userInfo?.last_name}
                 </text>
               </label>
               <br></br>
               <label>
-                <b>Username:</b>
+                <b>Username:</b>&nbsp; &nbsp;
                 <text type="text" className="edit-field" name="uname">
                   {header}
                 </text>
               </label>
               <br></br>
               <label>
-                <b>Level/Strand:</b>
+                <b>Level/Strand:</b>&nbsp; 
                 <text type="text" className="edit-field" name="aname">
                   {userInfo?.levelStrand}
                 </text>
               </label>
               <br></br>
               <label>
-                <b>School:</b>
+                <b>School:</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <text type="text" className="edit-field" name="aname">
                   {userInfo?.school}
                 </text>

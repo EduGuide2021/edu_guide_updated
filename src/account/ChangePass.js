@@ -25,13 +25,13 @@ function ChangePass() {
       <img src="./icons/Line.png" class="line"></img>
       </center>
       <div className="container-profile">
-        <div className="row-profile profile-form">
-          <div className="col-mypassword">
+        <div className="row-pass profile-form">
+          {/* <div className="col-mypassword">
           <br></br>
         <br></br>
             <img src="/static/media/icon2.9f428e47.png"/>
-          </div>
-          <dvi className="col-mypassword" align="left">
+          </div> */}
+          <div className="col-mypassword" align="left">
           <br></br>
         
             <b>old password:</b>
@@ -41,7 +41,7 @@ function ChangePass() {
             <br/>
           <br/>
             <b>confirm new password:</b>
-          </dvi>
+          </div>
           <div className="col-mypassword">
       <form >
         

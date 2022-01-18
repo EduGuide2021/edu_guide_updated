@@ -39,21 +39,35 @@ function EditProfile() {
 
   return (
     <div>
-      <h3>Edit Profile</h3>
-      <table className="edit-table">
-        <tr>
-          <td>
-            <div className="edit-iconbg">
-              <img src="./icons/bg icon.png" alt="icon 0"></img>
-              <div className="edit-icon">
-                <img src="./icons/icon 1.png" alt="icon 1"></img>
-              </div>
-            </div>
-          </td>
-          <td>
-            <form className="edit-form">
-              <label>
-                <b>First Name:</b>
+      <h1>Edit Profile</h1>
+      <center>
+      <img src="./icons/Line.png" class="line"></img>
+      </center>
+     
+       
+        
+      <div className="container-profile">
+        <div className="row-edit profile-form">
+           <div className="col-edit" align="left">
+          <br></br>
+        <br></br>
+            <img src="/static/media/icon2.9f428e47.png"/>
+          </div>
+          <div className="col-edit">
+          <b>First Name:</b>
+          <br/>
+          <b>Last Name::</b>
+          <br/>
+          <b>Username:</b>
+          <br/>
+          <b>Level/Strand:</b>
+          <br/>
+          <b>School:</b>
+          </div>
+          <div className="col-edit">
+            <form >
+            
+                {/* <b>First Name:</b> */}
                 <input
                   type="text"
                   className="edit-field"
@@ -63,10 +77,10 @@ function EditProfile() {
                     setFirstname(event.target.value);
                   }}
                 />
-              </label>
-              <br></br>
-              <label>
-                <b>Last Name::</b>
+            <br/>
+           
+            
+                {/* <b>Last Name::</b> */}
                 <input
                   type="text"
                   className="edit-field"
@@ -76,10 +90,10 @@ function EditProfile() {
                     setLastname(event.target.value);
                   }}
                 />
-              </label>
-              <br></br>
-              <label>
-                <b>Username:</b>
+             
+             <br/>
+             
+                {/* <b>Username:</b> */}
                 <input
                   type="text"
                   className="edit-field"
@@ -89,10 +103,10 @@ function EditProfile() {
                     setUsername(event.target.value);
                   }}
                 />
-              </label>
-              <br></br>
-              <label>
-                <b>Level/Strand:</b>
+              
+              <br/>
+             
+                {/* <b>Level/Strand:</b> */}
                 <input
                   type="text"
                   className="edit-field"
@@ -102,10 +116,10 @@ function EditProfile() {
                     setLevelStrand(event.target.value);
                   }}
                 />
-              </label>
-              <br></br>
-              <label>
-                <b>School:</b>
+              
+              <br/>
+              
+                {/* <b>School:</b> */}
                 <input
                   type="text"
                   className="edit-field"
@@ -115,17 +129,19 @@ function EditProfile() {
                     setSchool(event.target.value);
                   }}
                 />
-              </label>
+              
             </form>
-          </td>
-        </tr>
-      </table>
-      <div className="profile-btn">
+            </div>
+            </div>
+            </div>
+          
+     
+      <div align="center">
         {/* <Link to="/changeicon" className="reg-btn" value="Edit">
 					Change Icon
 				</Link> */}
         <Link
-          className="reg-btn"
+          className="profile-button"
           value="Edit Profile"
           onClick={() => {
             if (username && levelStrand) {
@@ -157,7 +173,7 @@ function EditProfile() {
         >
           Save Changes
         </Link>
-        <Link to="/mainprofile" className="reg-btn" value="Cancel">
+        <Link to="/mainprofile" className="profile-button" value="Cancel">
           Cancel
         </Link>
       </div>
