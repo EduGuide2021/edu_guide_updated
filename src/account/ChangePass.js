@@ -88,7 +88,7 @@ function ChangePass() {
       </div>
       <div className="pass-btns">
         <button
-          className="reg-btn"
+          className="sub-btn"
           value="Save"
           onClick={async () => {
             try {
@@ -118,8 +118,10 @@ function ChangePass() {
         >
           Save
         </button>
-        <Link to="/mainprofile" className="reg-btn" value="Cancel">
-          Cancel
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to="/mainprofile" value="Cancel">
+          <button className="sub-btn">Cancel</button>
+          
         </Link>
       </div>
       <p className="bottom_p">

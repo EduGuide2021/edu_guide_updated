@@ -124,6 +124,7 @@ h6 {
 }
 
 .sub-btn {
+	height: 50px;
 	font-family: Ruda;
 	font-size: 15px;
 	background-color: white;
