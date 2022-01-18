@@ -78,7 +78,10 @@ function LogIn() {
   return (
     <body>
       <div align="center" className="login_body">
-        <h1>Log In</h1>
+      <Link to="/adminlogin" style={{ textDecoration: "none" }}>
+      <h1>Log In</h1>
+            </Link>
+        
 
         <img src="./icons/Line.png" className="line"></img>
         <br></br>
