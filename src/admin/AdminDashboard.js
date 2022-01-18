@@ -26,51 +26,59 @@ function AdminDashboard() {
           }}
         >
           <div
-            style={{
-              padding: 30,
-              marginBottom: 30,
-              width: "45%",
-              cursor: "pointer",
-              background: "rgba(241, 147, 54, 0.53)",
-            }}
+           className="dash-board-card"
+            // style={{
+            //   padding: 30,
+            //   marginBottom: 30,
+            //   width: "45%",
+            //   cursor: "pointer",
+            //   background: "rgba(241, 147, 54, 0.53)",
+            //   fontSize: "24px"
+            // }}
             onClick={() => history.push("/admin-user-accounts")}
           >
-            User Accounts ({data?.getAllUsers?.length - 1})
+            <label className="num-border">{data?.getAllUsers?.length - 1} </label> &nbsp;
+            User Accounts
           </div>
           <div
-            style={{
-              marginBottom: 30,
+           className="dash-board-card"
+            // style={{
+            //   marginBottom: 30,
 
-              width: "45%",
-              cursor: "pointer",
-              padding: 30,
-              background: "rgba(241, 147, 54, 0.53)",
-            }}
+            //   width: "45%",
+            //   cursor: "pointer",
+            //   padding: 30,
+            //   background: "rgba(241, 147, 54, 0.53)",
+            //   fontSize: "24px"
+            // }}
             onClick={() => history.push("/customize-gen-test")}
           >
             Customize General Test
           </div>
           <div
-            style={{
-              padding: 30,
-              marginBottom: 30,
-              width: "45%",
-              cursor: "pointer",
-              background: "rgba(241, 147, 54, 0.53)",
-            }}
+           className="dash-board-card"
+            // style={{
+            //   padding: 30,
+            //   marginBottom: 30,
+            //   width: "45%",
+            //   cursor: "pointer",
+            //   background: "rgba(241, 147, 54, 0.53)",
+            //   fontSize: "24px"
+            // }}
             onClick={() => history.push("/community")}
           >
             Community
           </div>
           <div
-            style={{
-              marginBottom: 30,
+          className="dash-board-card"
+            // style={{
+            //   marginBottom: 30,
 
-              width: "45%",
-              cursor: "pointer",
-              padding: 30,
-              background: "rgba(241, 147, 54, 0.53)",
-            }}
+            //   width: "45%",
+            //   cursor: "pointer",
+            //   padding: 30,
+            //   background: "rgba(241, 147, 54, 0.53)",
+            // }}
             onClick={() => history.push("/customize-spec-test")}
           >
             Customize Specialized Test
