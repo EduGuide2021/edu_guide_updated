@@ -114,13 +114,17 @@ function Community() {
                 name="post"
               />
             </div>
-            <div style={{ width: "45%", alignSelf: "flex-start" }}>
+            <center>
+            <div style={{ width: "45%", alignSelf: "center" }}>
               {item?.comments?.map((item) => (
+               
                 <div style={{ background: "#ddd" }}>
                   <p style={{ textAlign: "left" }}>{item?.commentText}</p>
                 </div>
+               
               ))}
             </div>
+            </center>
             {/* <Input
               value={item?.commentText}
               onChange={(e) => {
@@ -168,8 +172,8 @@ function Community() {
             {userInfo?.is_admin && (
               <button
                 type="submit"
-                className="deletebtn"
-                style={{ marginLeft: 0 }}
+                className="rounded-red-button1"
+                
                 onClick={() => {
                   deleteCommunity({ variables: { id: item?.id } });
                 }}

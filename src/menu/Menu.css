@@ -428,6 +428,23 @@ h6 {
 	padding: 5px 20px;
 
 }
+.rounded-red-button1{
+	position: absolute;
+	border-radius: 70px;
+	
+	/* border: 2px ; */
+	font-size: 20px;
+	color:#ffffff;
+	/* font-weight: bold; */
+	/* margin-top: -25px; */
+	/* margin-right: 1px; */
+	margin-left: 30%;
+	/* font-weight: bold; */
+	/* background-color: var(--eduguide_blue); */
+	background-color: red;
+	padding: 5px 20px;
+
+}
 
 .comm_entry {
 	font-size: 20px;

@@ -12,6 +12,16 @@
   /* margin-left: -9%; */
   /* margin-bottom: -7.5%; */
 }
+.navbar__wrapper_admin {
+  color: var(--eduguide_blue) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  /* margin: -5%; */
+  /* margin-left: -9%; */
+  /* margin-bottom: -7.5%; */
+}
 
 .navbar__logo {
   flex: 0.2;
@@ -28,6 +38,20 @@ img {
   font-size: 20px;
 }
 .navbar__links {
+  /* flex: 0.5; */
+  float: center;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  background-color: var(--eduguide_blue);
+  /* margin-top: -1vw; */
+  /* margin-left: -58%; */
+  /* margin-right: 10%; */
+  justify-content: space-evenly;
+  color: var(--eduguide_blue) !important;
+}
+.navbar__links_admin {
   /* flex: 0.5; */
   float: center;
   display: flex;

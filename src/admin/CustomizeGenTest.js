@@ -32,6 +32,7 @@ function CustomizeGenTest() {
               cursor: "pointer",
               background: "rgba(241, 147, 54, 0.53)",
             }}
+            className="dash-board-card"
             onClick={() => history.push("/edit-gen-test-sets-list")}
           >
             Edit Current Sets
@@ -45,6 +46,7 @@ function CustomizeGenTest() {
               padding: 30,
               background: "rgba(241, 147, 54, 0.53)",
             }}
+            className="dash-board-card"
             onClick={() => history.push("/add-gen-test-set")}
           >
             Add New Set

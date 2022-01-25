@@ -134,8 +134,8 @@ function NavBar() {
           />
         </div>
       ) : (
-        <div className="navbar__wrapper">
-          <div className="navbar__logo">
+        <div className="navbar__wrapper_admin">
+          {/* <div className="navbar__logo">
             <Link to="/admin-dashboard">
               <img
                 src="./images/Logo192.png"
@@ -143,8 +143,19 @@ function NavBar() {
                 className="logo_size"
               />
             </Link>
-          </div>
-          <ul className="navbar__links">
+          </div> */}
+          
+          <ul className="navbar__links_admin">
+          <li className="navbar__link">
+              <Link to="/">
+                <img
+                  src="./images/Logo192.png"
+                  alt="eduguide logo"
+                  className="logo_view"
+                />
+                <label className="logo-label">EduGuide</label>
+              </Link>
+            </li>
             <li className="navbar__link">
               <Link to="/admin-user-accounts" className="navbar__link">
                 User Accounts
@@ -169,8 +180,8 @@ function NavBar() {
                 Community
               </Link>
             )}
-            <div className="login-item">
-              {header ? (
+            {/* <div className="login-item"> */}
+              {/* {header ? (
                 <li>
                   <Link to="/mainprofile" className="login-item">
                     <p className="user-name"> Hi {header}! </p>
@@ -182,13 +193,13 @@ function NavBar() {
                     Login
                   </Link>
                 </li>
-              )}
+              )} */}
 
               {header ? (
-                <li>
+                <li className="navbar__link">
                   <Link
                     to="/login"
-                    className="login-item"
+                    className="logout-yellow-btn"
                     onClick={() => {
                       logoutClick();
                     }}
@@ -203,7 +214,7 @@ function NavBar() {
                   </Link>
                 </li>
               )}
-            </div>
+            {/* </div> */}
           </ul>
           <GiHamburgerMenu
             onClick={() => handleClick()}
