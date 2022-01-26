@@ -125,7 +125,7 @@ function Community() {
               ))}
             </div>
             </center>
-            {/* <Input
+            <Input
               value={item?.commentText}
               onChange={(e) => {
                 let communities = [...communitiesData];
@@ -133,7 +133,7 @@ function Community() {
                 setCommunitiesData(communities);
               }}
               style={{ width: "25%", marginLeft: 80 }}
-            /> */}
+            />
             <center>
             <div className="community_btn">
 
