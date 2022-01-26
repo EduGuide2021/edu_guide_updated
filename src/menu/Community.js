@@ -161,6 +161,7 @@ function Community() {
               Comment
              
             </button>
+            {!userInfo?.is_admin && (
             <button type="submit" className="sharebtn">
               <a
                 href="https://forms.office.com/r/Juc6FTPfKC"
@@ -170,6 +171,7 @@ function Community() {
                 Report
               </a>
             </button>
+            )}
             {userInfo?.is_admin && (
               <button
                 type="submit"

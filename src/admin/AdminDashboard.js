@@ -26,7 +26,7 @@ function AdminDashboard() {
           }}
         >
           <div
-           className="dash-board-card"
+           className="dash-board-card-dash"
             // style={{
             //   padding: 30,
             //   marginBottom: 30,
@@ -37,17 +37,18 @@ function AdminDashboard() {
             // }}
             onClick={() => history.push("/admin-user-accounts")}
           >
-            <div className="dash-row">
-              <div className="dash-col">
+           
+             
             <label className="num-border">{data?.getAllUsers?.length - 1} </label> &nbsp;
-            </div>
-            <div className="dash-col">
+           
+            <br></br>
+            <br></br>
             User Accounts
-            </div>
-            </div>
+            
+            
           </div>
           <div
-           className="dash-board-card"
+           className="dash-board-card-dash"
             // style={{
             //   marginBottom: 30,
 
@@ -59,11 +60,11 @@ function AdminDashboard() {
             // }}
             onClick={() => history.push("/customize-gen-test")}
           >
-            
+            <img src="./icons/customize_icon.png"></img>
             Customize General Test
           </div>
           <div
-           className="dash-board-card"
+           className="dash-board-card-dash"
             // style={{
             //   padding: 30,
             //   marginBottom: 30,
@@ -78,7 +79,7 @@ function AdminDashboard() {
             Community
           </div>
           <div
-          className="dash-board-card"
+          className="dash-board-card-dash"
             // style={{
             //   marginBottom: 30,
 
