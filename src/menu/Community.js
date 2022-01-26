@@ -132,21 +132,13 @@ function Community() {
                 communities[index].commentText = e.target.value;
                 setCommunitiesData(communities);
               }}
-              style={{ width: "25%", marginLeft: 80 }}
+              style={{ width: "25%", marginLeft: 540 }}
             />
             <center>
             <div className="community_btn">
 
              
-            <button
-              type="submit"
-              className="commentbtn"
-              
-              onClick={() => onComment(item)}
-            >
-              Comment
-             
-            </button>
+           
            
             <button className="sharebuttton">
               <FacebookShareButton
@@ -159,6 +151,15 @@ function Community() {
               >
                 Share{" "}
               </FacebookShareButton>
+            </button>
+            <button
+              type="submit"
+              className="commentbtn"
+              
+              onClick={() => onComment(item)}
+            >
+              Comment
+             
             </button>
             <button type="submit" className="sharebtn">
               <a

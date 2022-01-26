@@ -37,8 +37,14 @@ function AdminDashboard() {
             // }}
             onClick={() => history.push("/admin-user-accounts")}
           >
+            <div className="dash-row">
+              <div className="dash-col">
             <label className="num-border">{data?.getAllUsers?.length - 1} </label> &nbsp;
+            </div>
+            <div className="dash-col">
             User Accounts
+            </div>
+            </div>
           </div>
           <div
            className="dash-board-card"
@@ -53,6 +59,7 @@ function AdminDashboard() {
             // }}
             onClick={() => history.push("/customize-gen-test")}
           >
+            
             Customize General Test
           </div>
           <div
@@ -67,6 +74,7 @@ function AdminDashboard() {
             // }}
             onClick={() => history.push("/community")}
           >
+             <img src="./icons/community_icon.png"></img>
             Community
           </div>
           <div
@@ -81,6 +89,7 @@ function AdminDashboard() {
             // }}
             onClick={() => history.push("/customize-spec-test")}
           >
+            <img src="./icons/note.png"></img>
             Customize Specialized Test
           </div>
         </div>

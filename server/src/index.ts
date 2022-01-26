@@ -14,10 +14,10 @@ import { Comment } from "./Entities/Comment";
 const main = async () => {
 	await createConnection({
         type: "mysql",
-        // host: "exbodcemtop76rnz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        // host: "127.0.0.1",
         database: "eduguide",
         username: "root",
-        password: "",
+        password: "password",
         logging: true,
         synchronize: true,
         entities: [
