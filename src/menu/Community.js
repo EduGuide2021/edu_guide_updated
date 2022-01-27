@@ -73,7 +73,7 @@ function Community() {
           <img src={icon1} alt="this is an icon"></img>
         </div>
     
-        <textarea
+        <input type="text"
           className="commfield"
           name="post"
           value={message}
@@ -114,13 +114,41 @@ function Community() {
                 disabled
                 name="post"
               />
+                 {!userInfo?.is_admin && (
+            <button type="submit" className="sharebtn">
+              <a
+                href="https://forms.office.com/r/Juc6FTPfKC"
+                className="rounded-red-button"
+                target="_blank"
+              >
+                Report
+              </a>
+            </button>
+            )}
+            {userInfo?.is_admin && (
+              <button
+                type="submit"
+                className="sharebtn"
+                
+                onClick={() => {
+                  deleteCommunity({ variables: { id: item?.id } });
+                }}
+              >
+                <a className="rounded-red-button">
+                Delete
+                </a>
+              </button>
+            )}
             </div>
+         
             <center>
             <div style={{ width: "45%", alignSelf: "center" }}>
               {item?.comments?.map((item) => (
-               
-                <div style={{ background: "#ddd",borderRadius: 20 }}>
-                  <p style={{ textAlign: "left"}}>{item?.commentText}</p>
+               <div>
+                <div style={{ background: "#16367c",borderRadius: 20 }}>
+                  <text className="com-comment">{item?.commentText}</text>
+                </div>
+                <br></br>
                 </div>
                
               ))}
@@ -133,7 +161,8 @@ function Community() {
                 communities[index].commentText = e.target.value;
                 setCommunitiesData(communities);
               }}
-              style={{ width: "50%", height: 50}}
+              placeholder="Comment"
+              style={{ width: "50%", height: 50, borderRadius: 20}}
             />
           
             <div className="community_btn">
@@ -150,7 +179,7 @@ function Community() {
                 hashtag={"#eduguide #career #support #system #careerdecision"}
                 description={`${item?.comment}`}
               >
-                Share{" "}
+                <img src="./icons/share_icon.png"></img>
               </FacebookShareButton>
             </button>
             <button
@@ -159,32 +188,10 @@ function Community() {
               
               onClick={() => onComment(item)}
             >
-              Comment
+             <img src="./icons/send_icon.png"></img>
              
             </button>
-            {!userInfo?.is_admin && (
-            <button type="submit" className="sharebtn">
-              <a
-                href="https://forms.office.com/r/Juc6FTPfKC"
-                className="rounded-red-button"
-                target="_blank"
-              >
-                Report
-              </a>
-            </button>
-            )}
-            {userInfo?.is_admin && (
-              <button
-                type="submit"
-                className="rounded-red-button1"
-                
-                onClick={() => {
-                  deleteCommunity({ variables: { id: item?.id } });
-                }}
-              >
-                Delete
-              </button>
-            )}
+            
             
             </div>
             </center>

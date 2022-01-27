@@ -39,7 +39,7 @@ function AdminDashboard() {
           >
            
              
-            <label className="num-border">{data?.getAllUsers?.length - 1} </label> &nbsp;
+            <label className="num-border"> {data?.getAllUsers?.length - 1}</label>
            
             <br></br>
             <br></br>
