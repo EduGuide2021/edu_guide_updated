@@ -70,6 +70,9 @@ function MainProfile() {
             </div>
             </center>
       <p className="bottom_p">
+        <br/>
+        <br/>
+        <br/>
         <b>Make the right decision.</b>
       </p>
     </div>

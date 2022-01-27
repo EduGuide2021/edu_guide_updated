@@ -89,10 +89,18 @@ p {
 	width: 32%;
 	height: 250px;
 	border: 2px solid var(--eduguide_orange);
+	border-radius: 10px;
   }
   .contact-us-box text{
 	margin-left: 10%;
 	color: var(--eduguide_blue);
+  }
+  .contact-us-box text:hover{
+	
+	font-size: 20px;
+  }
+  .test-btn:hover{
+	  color: var(--eduguide_orange);
   }
   .contact-us-box a{
 	display: block;
@@ -199,7 +207,7 @@ h6 {
 }
 
 .contact-field {
-	
+	border-radius: 10px;
 	font-size: 1.65vw;
 	color: var(--eduguide_blue);
 	width: 70%;
@@ -210,7 +218,7 @@ h6 {
 	text-align: initial;
 }
 .contact-field-area {
-	
+	border-radius: 10px;
 	font-size: 1.65vw;
 	color: var(--eduguide_blue);
 	width: 70%;
