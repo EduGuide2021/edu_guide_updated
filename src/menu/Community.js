@@ -99,15 +99,16 @@ function Community() {
 
       <img src="./icons/Line.png" className="line" alt="this is an imag."></img>
       </center>
+      <center>
       {communitiesData &&
         communitiesData?.map((item, index) => (
-          <div style={{ marginBottom: 20 }}>
+          <div className="post-border">
             <div className="commdiv" style={{ marginBottom: -20 }}>
               <div className="commicon">
                <center> <img src={icon} alt="this is icn"></img></center>
                 <p>{item?.creator}</p>
               </div>
-              <textarea
+              <input type="text"
                 className="comm_entry"
                 value={item?.comment}
                 disabled
@@ -118,13 +119,13 @@ function Community() {
             <div style={{ width: "45%", alignSelf: "center" }}>
               {item?.comments?.map((item) => (
                
-                <div style={{ background: "#ddd" }}>
-                  <p style={{ textAlign: "left" }}>{item?.commentText}</p>
+                <div style={{ background: "#ddd",borderRadius: 20 }}>
+                  <p style={{ textAlign: "left"}}>{item?.commentText}</p>
                 </div>
                
               ))}
             </div>
-            </center>
+            
             <Input
               value={item?.commentText}
               onChange={(e) => {
@@ -132,9 +133,9 @@ function Community() {
                 communities[index].commentText = e.target.value;
                 setCommunitiesData(communities);
               }}
-              style={{ width: "25%", marginLeft: 540 }}
+              style={{ width: "50%", height: 50}}
             />
-            <center>
+          
             <div className="community_btn">
 
              
@@ -188,7 +189,9 @@ function Community() {
             </div>
             </center>
           </div>
+           
         ))}
+        </center>
     </div>
   );
 }

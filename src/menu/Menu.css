@@ -8,6 +8,16 @@ h1 {
 	margin-bottom: -0.1%; */
 	font-weight: 600 !important;
 }
+.post-border{
+	/* height: 700px; */
+	border-radius: 80px;
+	margin-bottom: 20px;
+	padding: 20px;
+	width: 70%;
+	border:2px var(--eduguide_blue) solid;
+	background-color: peachpuff;
+}
+
 .card-size{
 	margin-right: -22%;
 	width: 100%;
@@ -56,6 +66,7 @@ p {
 .about__link:hover {
 	color: #f19336;
 }
+
 
 .devs img {
 	margin-left: 5%;
@@ -449,13 +460,14 @@ h6 {
 
 .comm_entry {
 	font-size: 20px;
-	color: var(--eduguide_blue);
+	color: white;
 	width: 60%;
-	height: 60%;
+	height: 70px;
 	border: thin;
+	border-radius: 20px;
 	border-color: var(--eduguide_blue);
 	text-align: initial;
-	background: #ffc78f;
+	background: var(--eduguide_blue);
 	
 }
 
@@ -496,6 +508,7 @@ h6 {
     height:100%;
      
 }
+
 .container-profile{
 	width:75%;
     max-width:2000px;
