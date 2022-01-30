@@ -425,14 +425,15 @@ h6 {
 }
 
 .sharebtn {
-	
-	position:absolute;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	/* position:absolute; */
 	cursor: pointer;
 	font-size: 1.5vw;
 	transition: 0.2s;
 	text-decoration: none;
 	color: var(--eduguide_blue);
-	background-color: black;
+	background-color: peachpuff;
 	border: none;
 	/* margin-left: 15px; */
 }
@@ -456,7 +457,7 @@ h6 {
 	color: var(--eduguide_orange);
 }
 .rounded-red-button{
-	position: absolute;
+	/* position: absolute; */
 	border-radius: 70px;
 	
 	/* border: 2px ; */
@@ -465,9 +466,10 @@ h6 {
 	/* font-weight: bold; */
 	/* margin-top: -25px; */
 	/* margin-right: 1px; */
-	margin-left: 4000%;
+	/* margin-left: 3200%; */
 	/* font-weight: bold; */
 	/* background-color: var(--eduguide_blue); */
+	margin-bottom: 20%;
 	background-color: red;
 	padding: 5px 20px;
 
