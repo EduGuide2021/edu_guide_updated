@@ -144,7 +144,20 @@ form {
 .reg-btn:hover {
  color: var(--eduguide_orange);
 }
-
+.download-pdf {
+  font-size: 50px;
+  background-color: white;
+  color: var(--eduguide_blue);
+  padding: 0.5vw 2vw;
+  border: solid var(--eduguide_orange);
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.download-pdf:hover {
+  font-size: 55px;
+ color: var(--eduguide_orange);
+}
 h3 {
   margin-top: 3%;
   font-size: 1.3vw;

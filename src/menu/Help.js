@@ -15,7 +15,9 @@ export default function Contact() {
       });
       e.target.reset()
   };
-
+ let downloadbtn = () =>{
+     alert("unavailable right now")
+ }
 
   return(
      
@@ -49,7 +51,7 @@ export default function Contact() {
             <center>
               
             <br></br>
-            <input className="sub-btn" type="button" value="Download" align="left"/>
+            <input className="download-pdf" type="button" value="Download" onClick={downloadbtn} align="left"/>
               
               <br></br>
               <p className="bottom_p">
