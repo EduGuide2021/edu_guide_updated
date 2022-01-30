@@ -16,7 +16,11 @@ const GenCourses = (props) => {
   console.log(topCourse);
   return (
     <div align="center">
-      <h3>Career Decision Support General Test</h3>
+      <h1>Career Decision Support General Test</h1>
+      <img src="./icons/Line.png" class="line"></img>
+      <br></br>
+      <br></br>
+      
       <br></br>
       <table className="course-table">
         <tr align="center">
@@ -52,7 +56,10 @@ const GenCourses = (props) => {
           })}
         </tr>
       </table>
-
+<br></br>
+<br></br>
+<br></br>
+<br></br>
       <p className="bottom_p">
         <b>Make the right decision.</b>
       </p>

@@ -96,7 +96,7 @@ export default function BSCompSci(props) {
         <>
           <div className="question-section">
             <div className="question-count">
-              <span>Question {currentQuestion + 1}</span>/{questions.length}
+              <span className="question-count">Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className="question-text">
               {questions[currentQuestion].questionText}

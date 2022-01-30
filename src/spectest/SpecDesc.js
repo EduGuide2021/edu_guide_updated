@@ -59,6 +59,8 @@ export default class SpecDesc extends Component {
     return (
       <div align="center">
         <h1>Career Decision Support Specialized Test</h1>
+
+        <img src="./icons/Line.png" class="line"></img>
         <br></br>
         <p class="spec-deschead">
           The Career Decision Support Specialized test is the second test based

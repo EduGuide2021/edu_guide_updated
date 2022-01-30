@@ -86,8 +86,8 @@ function GenTest() {
       
       {retakeTest ? (
         <div>
-          <p>there are more than 3 courses that suit them</p>
-          <button onClick={() => setRetakeTest(false)}>
+          <h1>there are more than 3 courses that suit them</h1>
+          <button className="retake-btn" onClick={() => setRetakeTest(false)}>
             Would you like to retake the test?
           </button>
         </div>

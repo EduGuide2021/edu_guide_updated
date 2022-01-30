@@ -73,7 +73,16 @@ h3 {
   padding-left: 1%;
   margin-bottom: 2%;
 }
-
+.retake-btn{
+  font-size: 300%;
+  background-color: var(--eduguide_orange);
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+}
+.retake-btn:hover{
+  font-size: 320%;
+}
 .question-text{
   background-color: var(--eduguide_blue);
   color: white !important;
@@ -122,6 +131,11 @@ h3 {
   margin-bottom: 2%;
   font-size: 1.2vw;
 }
+.courses-btn:hover {
+  background-color: var(--eduguide_blue);
+  color: white;
+  transition: 1s;
+}
 
 .course-table {
   width: 100%;
@@ -137,6 +151,17 @@ h3 {
   padding: 5px;
   /* border-radius: 3px; */
   /* filter: invert(100%) hue-rotate(20deg) brightness(1); */
+}
+.answer-section button{
+  width: 20px;
+  font-size: 30px;
+  color: white;
+  background-color: var(--eduguide_blue);
+  border-radius: 30px;
+}
+.answer-section button:hover{
+
+ color: var(--eduguide_orange);
 }
 .survey_button{
   font-size: 50px;
