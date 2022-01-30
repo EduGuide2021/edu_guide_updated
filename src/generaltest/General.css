@@ -64,6 +64,7 @@ h3 {
   background-color: var(--eduguide_orange);
   border: none;
   border-radius: 3vw;
+  font-size: 30px;
   font-weight: bold;
   width: 15%;
   padding-top: 1%;
@@ -73,7 +74,20 @@ h3 {
   margin-bottom: 2%;
 }
 
-.question-text,
+.question-text{
+  background-color: var(--eduguide_blue);
+  color: white !important;
+  border: none;
+  border-radius: 3vw;
+  font-weight: bold;
+  width: 60%;
+  padding-top: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1.5%;
+  margin-bottom: 1.5%;
+  font-size: 30px;
+}
 .courses-title {
   background-color: var(--eduguide_blue);
   color: white !important;
@@ -121,7 +135,24 @@ h3 {
   -o-transform: scale(1); /* Opera */
   transform: scale(1);
   padding: 5px;
-  filter: invert(100%) hue-rotate(20deg) brightness(1);
+  /* border-radius: 3px; */
+  /* filter: invert(100%) hue-rotate(20deg) brightness(1); */
+}
+.survey_button{
+  font-size: 50px;
+  color: white;
+  background-color: var(--eduguide_blue);
+  margin-left: 50px; 
+  margin-right: 50px; 
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  /* padding: 5; */
+}
+.survey_button:hover{
+  
+  color: var(--eduguide_orange);
+ 
 }
 
 .button {

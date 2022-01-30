@@ -80,6 +80,10 @@ function GenTest() {
 
   return (
     <div className="app" align="center">
+      <br></br>
+      <br></br>
+      <br></br>
+      
       {retakeTest ? (
         <div>
           <p>there are more than 3 courses that suit them</p>
@@ -91,22 +95,24 @@ function GenTest() {
         <>
           <div className="question-section">
             <div className="question-count">
-              <span>Question {currentQuestion + 1}</span>/{questions.length}
+              <span className="question-count">Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className="question-text">
               {questions[currentQuestion]?.questionTest}
             </div>
           </div>
+          <br></br>
           <div className="answer-section">
             {[1, 2, 3, 4, 5].map((item, index) => (
               <button
-                style={{ margin: "0px 4px" }}
+                className="survey_button"
                 onClick={() => handleAnswerOptionClick(currentQuestion, item)}
               >
                 {item}
               </button>
             ))}
           </div>
+          <br></br>
           <div>
             <br></br>
             <button
@@ -132,6 +138,8 @@ function GenTest() {
             >
               Reset
             </button>
+            &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
             <button
               onClick={() => {
                 if (currentQuestion !== 0) {
@@ -142,6 +150,8 @@ function GenTest() {
             >
               Back
             </button>
+            &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
             <button
               onClick={() => {
                 if (currentQuestion !== questions?.length - 1) {
@@ -153,8 +163,11 @@ function GenTest() {
               Skip
             </button>
           </div>
+          <br></br>
+          <br></br>
+          <br></br>
           <p className="bottom_p">
-            <b>Make the rightdecision.</b>
+            <b>Make the right decision.</b>
           </p>
         </>
       )}
