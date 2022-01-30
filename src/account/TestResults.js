@@ -19,7 +19,10 @@ function TestResults() {
 
   return (
     <div align="center">
-      <h3> {header}'s Test Results</h3>
+      <h1> {header}'s Test Results</h1>
+      <center>
+      <img src="./icons/Line.png" class="line"></img>
+      </center>
       <table className="results">
         <tr>
           <td className="blue">General Test</td>
@@ -59,9 +62,9 @@ function TestResults() {
           Back
         </Link>
         {/* <Link to="/share" className="reg-btn" value="Cancel"> */}
-          <button className='reg-btn'><FacebookShareButton url={"https://peing.net/ja/"}
+          <button className='reg-btn'><FacebookShareButton url={"https://edu-guide-official.herokuapp.com/"}
         quote={"Special test result"}
-        hashtag={"#edu"}
+        hashtag={"#eduguide"}
         
         description={`${data?.getSpecialTests[0]?.test_name} : ${data?.getSpecialTests[0]?.score}`}>Share Results </FacebookShareButton></button>
         {/* </Link> */}

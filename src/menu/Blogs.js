@@ -18,7 +18,7 @@ function Blogs() {
  let sendEmail = (e) => {
     e.preventDefault();
   
-    emailjs.sendForm('gmail', 'template_975judb', form.current, 'user_k2uyNdRwq3XhF0ItCc5pZ')
+    emailjs.sendForm('gmail', 'template_t4bhqvl', form.current, 'user_k2uyNdRwq3XhF0ItCc5pZ')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -59,7 +59,7 @@ function Blogs() {
       )}
       <br></br>
       <br></br>
-      <text className="page-desc">view submissions </text> <u><a className="page-desc" href="#">here</a></u>
+      <text className="page-desc">view submissions </text> <u><a className="page-desc" href="https://www.facebook.com/eduguideacmr/">here</a></u>
       </form>
       <div>
         {data?.getAllBlog?.filter(item=>item?.is_approved || userInfo?.is_admin)?.map(item=>{

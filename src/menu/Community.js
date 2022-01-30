@@ -172,7 +172,7 @@ function Community() {
            
             <button className="sharebuttton">
               <FacebookShareButton
-                url={"https://eduguide.ph"}
+                url={"https://edu-guide-official.herokuapp.com/"}
                 quote={
                   "Hey everyone! EduGuide helped me choose the right program for me based on my interest and skills! Try it out on your own and find out yours! "
                 }

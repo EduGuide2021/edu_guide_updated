@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./menu/Home";
 import About from "./menu/About";
 import Blogs from "./menu/Blogs";
+import Help from "./menu/Help";
 import FAQs from "./menu/FAQs";
 import Community from "./menu/Community";
 import Contact from "./menu/Contact";
@@ -114,6 +115,7 @@ function App() {
             <Route exact path="/specresults3" component={SpecResults3} />
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/admin-dashboard" component={AdminDashBoard} />
+            <Route exact path="/help" component={Help} />
             <Route
               exact
               path="/admin-user-accounts"

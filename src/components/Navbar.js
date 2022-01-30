@@ -86,6 +86,11 @@ function NavBar() {
                 Contact
               </Link>
             </li>
+            <li className="navbar__link">
+              <Link to="/help" className="navbar__link">
+                Help
+              </Link>
+            </li>
             {/* <li className="navbar__link">
               <Link to="#" className="navbar__link">
                 help
@@ -106,6 +111,7 @@ function NavBar() {
                 </li>
               )}
             </div>
+            
             <div className="navbar__link">
               {header ? (
                 <li>
@@ -127,6 +133,7 @@ function NavBar() {
                 </li>
               )}
             </div>
+           
           </ul>
           <GiHamburgerMenu
             onClick={() => handleClick()}
