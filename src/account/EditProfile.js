@@ -137,6 +137,7 @@ function EditProfile() {
           
      
       <div align="center">
+        <br></br>
         {/* <Link to="/changeicon" className="reg-btn" value="Edit">
 					Change Icon
 				</Link> */}
