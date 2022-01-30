@@ -58,9 +58,12 @@ function TestResults() {
         </tr>
       </table>
       <div className="result-btn">
-        <Link to="/mainprofile" className="reg-btn" value="Save">
+        <Link to="/mainprofile" value="Save">
+          <button className="reg-btn">
           Back
+          </button>
         </Link>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {/* <Link to="/share" className="reg-btn" value="Cancel"> */}
           <button className='reg-btn'><FacebookShareButton url={"https://edu-guide-official.herokuapp.com/"}
         quote={"Special test result"}

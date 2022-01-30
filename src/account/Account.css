@@ -141,6 +141,9 @@ form {
   font-weight: 600;
   text-decoration: none;
 }
+.reg-btn:hover {
+ color: var(--eduguide_orange);
+}
 
 h3 {
   margin-top: 3%;
