@@ -383,7 +383,7 @@ h6 {
 	color: var(--eduguide_blue);
 	background-color: peachpuff;
 	border: none;
-	margin-left: -60%;
+	/* margin-left: -60%; */
 	/* margin-left: -10%; */
 }
 .commentbtn img{
@@ -396,14 +396,14 @@ h6 {
 .sharebuttton {
 	/* display: none; */
 	cursor: pointer;
-	position: absolute;
+	position: relative;
 	font-size: 1.5vw;
 	transition: 0.2s;
 	text-decoration: none;
 	color: var(--eduguide_blue);
 	background-color: peachpuff;
 	border: none;
-	margin-left: -27%;
+	/* margin-left: -27%; */
 }
 .sharebuttton img {
 	/* display: none; */
