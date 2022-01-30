@@ -42,7 +42,7 @@
   cursor: pointer;
   padding: 30px;
   height: 250px;
-  font-size: 30px;
+  font-size: 200%;
   font-weight: bold;
   background-color: rgba(241, 147, 54, 0.53);
 }
