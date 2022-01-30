@@ -92,6 +92,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/faqs" component={FAQs} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/help" component={Help} />
         {localStorage.getItem("user") || header ? (
           <>
             <Route exact path="/blogs" component={Blogs} />
@@ -115,7 +116,7 @@ function App() {
             <Route exact path="/specresults3" component={SpecResults3} />
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/admin-dashboard" component={AdminDashBoard} />
-            <Route exact path="/help" component={Help} />
+            
             <Route
               exact
               path="/admin-user-accounts"

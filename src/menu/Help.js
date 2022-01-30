@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from 'emailjs-com'
+// import dlpdf from ''
 
 
 export default function Contact() {
@@ -51,8 +52,9 @@ export default function Contact() {
             <center>
               
             <br></br>
-            <input className="download-pdf" type="button" value="Download" onClick={downloadbtn} align="left"/>
-              
+            <a href="./icons/Eduguide-Manual.pdf">
+            <input className="download-pdf" type="button" value="Download" align="left"/>
+            </a>
               <br></br>
               <p className="bottom_p">
         <b>Make the right decision.</b>
