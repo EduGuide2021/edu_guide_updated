@@ -152,12 +152,23 @@ h3 {
   /* border-radius: 3px; */
   /* filter: invert(100%) hue-rotate(20deg) brightness(1); */
 }
-.answer-section button{
-  width: 20px;
+/* .answer-section button{
+
   font-size: 30px;
   color: white;
   background-color: var(--eduguide_blue);
   border-radius: 30px;
+} */
+.multiple-choice{
+  background-color: var(--eduguide_blue);
+  color: white;
+  margin-bottom: 1%;
+  /* height: 100px; */
+  width: 35%;
+  font-size: 150%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
 }
 .answer-section button:hover{
 

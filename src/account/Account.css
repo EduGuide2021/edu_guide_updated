@@ -243,16 +243,23 @@ h3 {
   margin-top: 5%;
   font-weight: bold;
   margin-bottom: 5%;
+  background-color: var(--eduguide_blue);
+  /* padding:20px; */
+  /* border-radius: 20px; */
 }
 
 .blue {
-  color: var(--eduguide_blue);
+  color: white;
+  padding: 2%;
   font-size: 1.2vw;
+  border: black solid;
 }
 
 .orange {
+  border: black solid;
   color: var(--eduguide_orange);
   font-size: 1.2vw;
+  text-align: center;
 }
 
 .form-error {

@@ -65,6 +65,8 @@ export default function BSCompSci(props) {
   }
   return (
     <div className="app" align="center">
+      <br></br>
+      <br></br>
       {showScore ? (
         <div
           className="score-section"
@@ -75,9 +77,9 @@ export default function BSCompSci(props) {
             alignItems: "center",
           }}
         >
-          <p>
+          <h1>
             You scored {score} out of {questions.length}
-          </p>
+          </h1>
           <button
             className="reg-btn"
             onClick={() =>
@@ -105,15 +107,15 @@ export default function BSCompSci(props) {
           <div
             className="answer-section"
             style={{
-              display: "flex",
+              // display: "flex",
               flexWrap: "wrap",
-              width: "80%",
+              width: "65%",
               justifyContent: "space-around",
             }}
           >
             {questions[currentQuestion].answerOptions.map((answerOption) => (
               <button
-                style={{ width: "20%", cursor: "pointer" }}
+                className="multiple-choice"
                 onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
               >
                 {answerOption.answerText}
@@ -158,6 +160,7 @@ export default function BSCompSci(props) {
             >
               Reset
             </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button
               onClick={() => {
                 if (currentQuestion !== 0) {
@@ -168,6 +171,7 @@ export default function BSCompSci(props) {
             >
               Back
             </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button
               onClick={() => {
                 if (currentQuestion !== questions?.length - 1) {

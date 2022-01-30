@@ -30,7 +30,7 @@ function TestResults() {
             return <td className="blue">{item}</td>
           })}
         </tr>
-        <br></br>
+        
         <tr>
           <td className="blue">Specialized Test</td>
           {data?.getSpecialTests.slice(Math.max(data?.getSpecialTests?.length - 3, 0))?.map(item=>{
@@ -39,8 +39,9 @@ function TestResults() {
           </td>
           })}
           
+          
         </tr>
-        <br></br>
+       
         <tr>
           <td className="blue">General Test Count</td>
           <td className="orange">
@@ -48,7 +49,7 @@ function TestResults() {
           </td>
           
         </tr>
-        <br></br>
+        
         <tr>
           <td className="blue">Specialized Test Count</td>
           <td className="orange">
