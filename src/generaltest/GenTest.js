@@ -154,7 +154,7 @@ function GenTest() {
             </button>
           </div>
           <p className="bottom_p">
-            <b>Make the right decision.</b>
+            <b>Make the rightdecision.</b>
           </p>
         </>
       )}
