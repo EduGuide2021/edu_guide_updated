@@ -43,7 +43,7 @@ function NavBar() {
                   alt="eduguide logo"
                   className="logo_view"
                 />
-                <label className="logo-label">EduGuide</label>
+                &nbsp;&nbsp;&nbsp;<label className="logo-label">EduGuide</label>
               </Link>
             </li>
 
