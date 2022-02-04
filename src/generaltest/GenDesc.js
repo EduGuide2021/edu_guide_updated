@@ -50,6 +50,11 @@ export default class GenDesc extends Component {
     return (
       <div align="center">
         <h1>Career Decision Support General Test</h1>
+        <center>
+       
+        
+       <img src="./icons/Line.png" class="line"></img>
+       </center>
         <br></br>
         <p class="gen-deschead">
           The Career Decision Support General Test is the first test that will
@@ -63,7 +68,7 @@ export default class GenDesc extends Component {
           <br></br>
           This test will take 10 minutes to accomplish.
         </p>
-        <div align="center">
+        <div className="gen-desc-area" align="center">
           <label className="gen-desc">
             {/* <ValidationMessage
           valid={this.state.checkboxValid}
@@ -77,6 +82,7 @@ export default class GenDesc extends Component {
             I acknowledge that I have read and understand the abovementioned
             Support Decision Integrity information as it pertains to the test.
           </label>
+          <br></br>
           <br></br>
           <br></br>
           <label className="gen-desc">

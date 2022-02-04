@@ -62,7 +62,7 @@ export default class SpecDesc extends Component {
 
         <img src="./icons/Line.png" class="line"></img>
         <br></br>
-        <p class="spec-deschead">
+        <p class="gen-deschead">
           The Career Decision Support Specialized test is the second test based
           on the General Test results. Each specialization test is optimized
           with more specific questions related to the program. There are a total
@@ -72,7 +72,7 @@ export default class SpecDesc extends Component {
           <br></br>
           This test will take 10 minutes to accomplish.
         </p>
-        <div align="center">
+        <div className="gen-desc-area" >
           <label className="spec-desc">
             <input
               type="checkbox"

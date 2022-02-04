@@ -28,11 +28,14 @@ h3 {
   float: left;
   line-height: normal;
 }
+.gen-desc-area{
+  width:90%;
+}
 
 .gen-deschead {
   color: var(--eduguide_blue);
   font-size: 1.8vw;
-  width: auto;
+  width: 90%;
   height: auto;
   font-weight: bold;
 }
