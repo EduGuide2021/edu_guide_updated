@@ -145,7 +145,7 @@ form {
  color: var(--eduguide_orange);
 }
 .download-pdf {
-  font-size: 50px;
+  font-size: 45px;
   background-color: white;
   color: var(--eduguide_blue);
   padding: 0.5vw 2vw;
@@ -155,7 +155,7 @@ form {
   text-decoration: none;
 }
 .download-pdf:hover {
-  font-size: 55px;
+  font-size: 50px;
  color: var(--eduguide_orange);
 }
 h3 {

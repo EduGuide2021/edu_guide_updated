@@ -143,6 +143,7 @@ img {
 }
 
 .user-name {
+  font-size: 100%;
   color: var(--eduguide_orange) !important;
 }
 

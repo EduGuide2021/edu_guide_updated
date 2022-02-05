@@ -100,7 +100,7 @@ function NavBar() {
               {header ? (
                 <li>
                   <Link to="/mainprofile" className="login-item">
-                    <p className="user-name"> Hi {header}! </p>
+                    <text className="user-name"> Hi {header}! </text>
                   </Link>
                 </li>
               ) : (

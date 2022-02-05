@@ -72,7 +72,7 @@ export default class SpecDesc extends Component {
           <br></br>
           This test will take 10 minutes to accomplish.
         </p>
-        <div className="gen-desc-area" >
+        <div className="gen-desc-area" align="center">
           <label className="spec-desc">
             <input
               type="checkbox"
