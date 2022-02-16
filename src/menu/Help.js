@@ -43,7 +43,7 @@ export default function Contact() {
           <form align="center">
             <label className="feed-back-label">
               <br></br>
-           click
+              Click this button to download instructions
               <br></br>
               <br></br>
               
